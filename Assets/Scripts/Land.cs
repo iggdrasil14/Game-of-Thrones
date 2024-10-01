@@ -4,26 +4,29 @@ using UnityEngine;
 public class Land : MonoBehaviour
 {
     public List<Land> borderLand;
+    public List<Unit> unitsOnLand;
     public string name;
     public bool isSupply;
     public bool isCastle;
 
-
-    // Start is called before the first frame update
-    void Start()
+    public void AddUnit(Unit unit)
     {
-        
+        if(unitsOnLand.Count < 4)
+        {
+            if (unitsOnLand.Contains(unit) == false) 
+            {
+                unitsOnLand.Add(unit);
+            }
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnMouseEnter()
     {
-        
+        Debug.Log("Enter");
     }
 
-    public void OnMouseUp()
+    public void OnMouseExit()
     {
-        Debug.Log(name);
+        Debug.Log("Exit");
     }
-
 }

@@ -25,11 +25,6 @@ public class Army
     }
 
 }
-
-public class Unit
-{
-    public int power;
-}
 public class Player
 {
     public List<Land> lands = new();
@@ -59,8 +54,5 @@ public class Player
         }
     }
 
-    public void MarchArmy(Land land)
-    {
 
-    }
 }

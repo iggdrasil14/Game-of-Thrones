@@ -22,3 +22,17 @@
         return new int[] { 2, 2 };
     }
 }
+
+public static class Tokens
+{
+    public static void TokenMarch(Land land)
+    {
+        if (land.unitsOnLand.Count > 0)
+        {
+            foreach (Unit item in land.unitsOnLand)
+            {
+                item.isCanMove = true;
+            }
+        }
+    }
+}
