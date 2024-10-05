@@ -150,7 +150,7 @@ Transform:
   m_GameObject: {fileID: 11914533}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.7714314, y: -9.77433, z: -5}
+  m_LocalPosition: {x: -4.7714314, y: -9.77433, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -175,10 +175,12 @@ MonoBehaviour:
   - {fileID: 1873878280}
   - {fileID: 780595805}
   - {fileID: 1319147630}
+  borderWater: []
   unitsOnLand: []
   name: Dornish Marches
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &11914536
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -315,7 +317,7 @@ Transform:
   m_GameObject: {fileID: 67519045}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.324, y: -6.346, z: 0}
+  m_LocalPosition: {x: -7.324, y: -6.346, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -443,10 +445,12 @@ MonoBehaviour:
   - {fileID: 1723405689}
   - {fileID: 969666002}
   - {fileID: 1361188576}
+  borderWater: []
   unitsOnLand: []
   name: Searoad Marches
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &67519049
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -546,10 +550,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   borderLand: []
+  borderWater: []
   unitsOnLand: []
   name: White Harbor Port
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!58 &67585111
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -664,7 +670,7 @@ Transform:
   m_GameObject: {fileID: 73568681}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5840721, y: -1.9621354, z: -5}
+  m_LocalPosition: {x: 0.5840721, y: -1.9621354, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -684,10 +690,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   borderLand:
   - {fileID: 1998109301}
+  borderWater: []
   unitsOnLand: []
   name: The Eyrie
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &73568684
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -768,7 +776,7 @@ Transform:
   m_GameObject: {fileID: 166415529}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.798, y: 2.071, z: 0}
+  m_LocalPosition: {x: -5.798, y: 2.071, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -879,10 +887,12 @@ MonoBehaviour:
   - {fileID: 1115964345}
   - {fileID: 1018129647}
   - {fileID: 478490793}
+  borderWater: []
   unitsOnLand: []
   name: Graywater Watch
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &166415533
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -962,7 +972,7 @@ Transform:
   m_GameObject: {fileID: 175198778}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.2097843, y: -21.158382, z: -5}
+  m_LocalPosition: {x: -1.2097843, y: -21.158382, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -980,11 +990,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 622367283}
+  - {fileID: 1875232252}
+  - {fileID: 354786284}
+  - {fileID: 1239973800}
+  - {fileID: 805618683}
+  borderWater: []
   unitsOnLand: []
   name: East Summer Sea
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &175198781
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1065,7 +1082,7 @@ Transform:
   m_GameObject: {fileID: 242157720}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.354, y: -0.048, z: 0}
+  m_LocalPosition: {x: -3.354, y: -0.048, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1182,10 +1199,12 @@ MonoBehaviour:
   - {fileID: 1018129647}
   - {fileID: 1212306171}
   - {fileID: 1998109301}
+  borderWater: []
   unitsOnLand: []
   name: The Twins
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &242157724
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1266,7 +1285,7 @@ Transform:
   m_GameObject: {fileID: 250548815}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.567, y: 5.227, z: 0}
+  m_LocalPosition: {x: -1.567, y: 5.227, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1289,10 +1308,12 @@ MonoBehaviour:
   - {fileID: 672451776}
   - {fileID: 1576712685}
   - {fileID: 1115964345}
+  borderWater: []
   unitsOnLand: []
   name: White Harbor
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &250548819
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1505,7 +1526,7 @@ Transform:
   m_GameObject: {fileID: 262347005}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.1268537, y: -3.4205492, z: -5}
+  m_LocalPosition: {x: -3.1268537, y: -3.4205492, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1528,10 +1549,12 @@ MonoBehaviour:
   - {fileID: 1044477465}
   - {fileID: 1723405689}
   - {fileID: 1649374257}
+  borderWater: []
   unitsOnLand: []
   name: Harrenhal
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &262347008
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1630,10 +1653,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   borderLand: []
+  borderWater: []
   unitsOnLand: []
   name: OldtownPort
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &300891613
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1714,7 +1739,7 @@ Transform:
   m_GameObject: {fileID: 303290749}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.287, y: -2.256, z: 0}
+  m_LocalPosition: {x: -4.287, y: -2.256, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1844,10 +1869,12 @@ MonoBehaviour:
   - {fileID: 1691231927}
   - {fileID: 1044477465}
   - {fileID: 262347007}
+  borderWater: []
   unitsOnLand: []
   name: Riverrun
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &303290753
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1928,7 +1955,7 @@ Transform:
   m_GameObject: {fileID: 311042949}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.382, y: 8.588, z: 0}
+  m_LocalPosition: {x: 0.382, y: 8.588, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1949,10 +1976,12 @@ MonoBehaviour:
   borderLand:
   - {fileID: 672451776}
   - {fileID: 834320816}
+  borderWater: []
   unitsOnLand: []
   name: Carhold
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &311042953
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2164,10 +2193,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   borderLand: []
+  borderWater: []
   unitsOnLand: []
   name: Sunspear Port
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &354786285
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2247,7 +2278,7 @@ Transform:
   m_GameObject: {fileID: 398055143}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.486, y: -6.890112, z: -5}
+  m_LocalPosition: {x: -0.486, y: -6.890112, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2270,10 +2301,12 @@ MonoBehaviour:
   - {fileID: 969666002}
   - {fileID: 1873878280}
   - {fileID: 622367283}
+  borderWater: []
   unitsOnLand: []
   name: Kingswood
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &398055146
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2419,7 +2452,7 @@ Transform:
   m_GameObject: {fileID: 470688234}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.0393726, y: -6.0895715, z: -5}
+  m_LocalPosition: {x: -1.0393726, y: -6.0895715, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2442,10 +2475,12 @@ MonoBehaviour:
   - {fileID: 1723405689}
   - {fileID: 969666002}
   - {fileID: 398055145}
+  borderWater: []
   unitsOnLand: []
   name: Kings Landing
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &470688237
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2526,7 +2561,7 @@ Transform:
   m_GameObject: {fileID: 478490790}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.953, y: 2.141, z: 0}
+  m_LocalPosition: {x: -7.953, y: 2.141, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2634,10 +2669,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   borderLand:
   - {fileID: 166415532}
+  borderWater: []
   unitsOnLand: []
   name: Futs Finger
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &478490794
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2854,7 +2891,7 @@ Transform:
   m_GameObject: {fileID: 597299812}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.583843, y: -4.340984, z: -5}
+  m_LocalPosition: {x: 2.583843, y: -4.340984, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2874,10 +2911,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   borderLand: []
+  borderWater: []
   unitsOnLand: []
   name: Dragonstone
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &597299815
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3003,7 +3042,7 @@ Transform:
   m_GameObject: {fileID: 610242552}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.345, y: -1.75, z: 0}
+  m_LocalPosition: {x: -8.345, y: -1.75, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3253,11 +3292,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 834320816}
+  - {fileID: 672451776}
+  - {fileID: 1660368048}
+  - {fileID: 1649752224}
+  - {fileID: 478490793}
+  - {fileID: 166415532}
+  borderWater: []
   unitsOnLand: []
   name: Bay of Ice
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &610242556
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3419,7 +3466,7 @@ Transform:
   m_GameObject: {fileID: 622367281}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.46796167, y: -8.951068, z: -5}
+  m_LocalPosition: {x: 0.46796167, y: -8.951068, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3441,10 +3488,12 @@ MonoBehaviour:
   borderLand:
   - {fileID: 398055145}
   - {fileID: 1873878280}
+  borderWater: []
   unitsOnLand: []
   name: Storms End
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &622367284
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3524,7 +3573,7 @@ Transform:
   m_GameObject: {fileID: 638093918}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.274, y: -19.983, z: -5}
+  m_LocalPosition: {x: -8.274, y: -19.983, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3542,11 +3591,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 67519048}
+  - {fileID: 1361188576}
+  - {fileID: 706260581}
+  - {fileID: 1319147630}
+  - {fileID: 805618683}
+  borderWater: []
   unitsOnLand: []
   name: West Summer Sea
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &638093921
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3627,7 +3683,7 @@ Transform:
   m_GameObject: {fileID: 672451773}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.122, y: 6.66, z: 0}
+  m_LocalPosition: {x: -4.122, y: 6.66, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3867,12 +3923,14 @@ MonoBehaviour:
   - {fileID: 250548817}
   - {fileID: 311042951}
   - {fileID: 834320816}
+  borderWater: []
   unitsOnLand:
   - {fileID: 41266844}
   - {fileID: 1405761153}
   name: Winterfell
   isSupply: 1
   isCastle: 0
+  isShip: 0
 --- !u!212 &672451777
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3952,7 +4010,7 @@ Transform:
   m_GameObject: {fileID: 706260579}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.32126, y: -14.176106, z: -5}
+  m_LocalPosition: {x: -9.32126, y: -14.176106, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3971,10 +4029,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   borderLand: []
+  borderWater: []
   unitsOnLand: []
   name: The Arbor
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &706260582
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4054,7 +4114,7 @@ Transform:
   m_GameObject: {fileID: 755723320}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.008762, y: -12.27903, z: -5}
+  m_LocalPosition: {x: -9.008762, y: -12.27903, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4072,11 +4132,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 67519048}
+  - {fileID: 1691231927}
+  - {fileID: 1852786357}
+  - {fileID: 303290752}
+  borderWater: []
   unitsOnLand: []
   name: The Golden Sound
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &755723323
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4156,7 +4222,7 @@ Transform:
   m_GameObject: {fileID: 780595803}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.843, y: -11.225, z: -5}
+  m_LocalPosition: {x: -4.843, y: -11.225, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4180,10 +4246,12 @@ MonoBehaviour:
   - {fileID: 1873878280}
   - {fileID: 1229304618}
   - {fileID: 805618683}
+  borderWater: []
   unitsOnLand: []
   name: Princes Pass
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &780595806
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4263,7 +4331,7 @@ Transform:
   m_GameObject: {fileID: 805618681}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.472, y: -13.316, z: -5}
+  m_LocalPosition: {x: -4.472, y: -13.316, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4285,10 +4353,12 @@ MonoBehaviour:
   - {fileID: 780595805}
   - {fileID: 1229304618}
   - {fileID: 1239973800}
+  borderWater: []
   unitsOnLand: []
   name: Starfall
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &805618684
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4369,7 +4439,7 @@ Transform:
   m_GameObject: {fileID: 812177285}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.344, y: -0.709, z: 0}
+  m_LocalPosition: {x: -8.344, y: -0.709, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4463,10 +4533,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   borderLand: []
+  borderWater: []
   unitsOnLand: []
   name: Pyke
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &812177289
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4547,7 +4619,7 @@ Transform:
   m_GameObject: {fileID: 834320814}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.446, y: 10.237, z: 0}
+  m_LocalPosition: {x: -2.446, y: 10.237, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4568,10 +4640,12 @@ MonoBehaviour:
   borderLand:
   - {fileID: 672451776}
   - {fileID: 311042951}
+  borderWater: []
   unitsOnLand: []
   name: Castle Black
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &834320818
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4755,7 +4829,7 @@ Transform:
   m_GameObject: {fileID: 862490531}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.49, y: -0.796, z: 0}
+  m_LocalPosition: {x: 0.49, y: -0.796, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4929,11 +5003,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 1576712685}
+  - {fileID: 250548817}
+  - {fileID: 672451776}
+  - {fileID: 311042951}
+  - {fileID: 834320816}
+  borderWater:
+  - {fileID: 0}
   unitsOnLand: []
   name: The Shivering Sea
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &862490535
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5046,7 +5128,7 @@ Transform:
   m_GameObject: {fileID: 969666000}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.025972, y: -7.9, z: -5}
+  m_LocalPosition: {x: -4.025972, y: -7.9, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5072,10 +5154,12 @@ MonoBehaviour:
   - {fileID: 398055145}
   - {fileID: 1873878280}
   - {fileID: 11914535}
+  borderWater: []
   unitsOnLand: []
   name: The Reach
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &969666003
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5174,10 +5258,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   borderLand: []
+  borderWater: []
   unitsOnLand: []
   name: Storms End Port
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &1016441813
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5258,7 +5344,7 @@ Transform:
   m_GameObject: {fileID: 1018129644}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.925, y: -0.054, z: 0}
+  m_LocalPosition: {x: -4.925, y: -0.054, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5385,10 +5471,12 @@ MonoBehaviour:
   - {fileID: 1115964345}
   - {fileID: 242157723}
   - {fileID: 303290752}
+  borderWater: []
   unitsOnLand: []
   name: Seagard
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &1018129648
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5469,7 +5557,7 @@ Transform:
   m_GameObject: {fileID: 1044477462}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.965, y: -4.182, z: 0}
+  m_LocalPosition: {x: -4.965, y: -4.182, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5598,10 +5686,12 @@ MonoBehaviour:
   - {fileID: 262347007}
   - {fileID: 67519048}
   - {fileID: 1723405689}
+  borderWater: []
   unitsOnLand: []
   name: StoneySept
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &1044477466
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5714,7 +5804,7 @@ Transform:
   m_GameObject: {fileID: 1115964343}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.873, y: 2.081, z: 0}
+  m_LocalPosition: {x: -3.873, y: 2.081, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5738,10 +5828,12 @@ MonoBehaviour:
   - {fileID: 166415532}
   - {fileID: 1018129647}
   - {fileID: 242157723}
+  borderWater: []
   unitsOnLand: []
   name: Moat Cailin
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &1115964347
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5944,10 +6036,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   borderLand: []
+  borderWater: []
   unitsOnLand: []
   name: Dragonstone Port
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &1171903077
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6027,7 +6121,7 @@ Transform:
   m_GameObject: {fileID: 1188975183}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.702784, y: -9.616384, z: -5}
+  m_LocalPosition: {x: -8.702784, y: -9.616384, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6045,11 +6139,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 812177288}
+  - {fileID: 1428351381}
+  - {fileID: 478490793}
+  - {fileID: 166415532}
+  - {fileID: 1018129647}
+  - {fileID: 303290752}
+  borderWater: []
   unitsOnLand: []
   name: Ironmans Bay
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &1188975186
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6130,7 +6232,7 @@ Transform:
   m_GameObject: {fileID: 1212306168}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.253, y: 0.875, z: 0}
+  m_LocalPosition: {x: -0.253, y: 0.875, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6295,10 +6397,12 @@ MonoBehaviour:
   borderLand:
   - {fileID: 242157723}
   - {fileID: 1998109301}
+  borderWater: []
   unitsOnLand: []
   name: The Fingers
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &1212306172
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6378,7 +6482,7 @@ Transform:
   m_GameObject: {fileID: 1229304616}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.867, y: -12.338, z: -5}
+  m_LocalPosition: {x: -2.867, y: -12.338, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6402,10 +6506,12 @@ MonoBehaviour:
   - {fileID: 805618683}
   - {fileID: 1239973800}
   - {fileID: 1875232252}
+  borderWater: []
   unitsOnLand: []
   name: Yronwood
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &1229304619
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6485,7 +6591,7 @@ Transform:
   m_GameObject: {fileID: 1239973798}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.92403674, y: -13.279636, z: -5}
+  m_LocalPosition: {x: -0.92403674, y: -13.279636, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6507,10 +6613,12 @@ MonoBehaviour:
   - {fileID: 805618683}
   - {fileID: 1229304618}
   - {fileID: 1875232252}
+  borderWater: []
   unitsOnLand: []
   name: Salt Shore
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &1239973801
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6595,7 +6703,7 @@ Transform:
   m_GameObject: {fileID: 1319147628}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.829, y: -12.143, z: -5}
+  m_LocalPosition: {x: -6.829, y: -12.143, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6617,10 +6725,12 @@ MonoBehaviour:
   - {fileID: 1879555278}
   - {fileID: 11914535}
   - {fileID: 780595805}
+  borderWater: []
   unitsOnLand: []
   name: Three Towers
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &1319147631
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6700,7 +6810,7 @@ Transform:
   m_GameObject: {fileID: 1339329859}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.7107842, y: -19.789383, z: -5}
+  m_LocalPosition: {x: -1.7107842, y: -19.789383, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6718,11 +6828,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 622367283}
+  - {fileID: 1873878280}
+  - {fileID: 1229304618}
+  - {fileID: 1875232252}
+  borderWater: []
   unitsOnLand: []
   name: Sea of Dorn
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &1339329862
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6802,7 +6918,7 @@ Transform:
   m_GameObject: {fileID: 1353462925}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.669, y: -20.321, z: -5}
+  m_LocalPosition: {x: -9.669, y: -20.321, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6820,11 +6936,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 1361188576}
+  - {fileID: 1879555278}
+  - {fileID: 300891612}
+  - {fileID: 1319147630}
+  - {fileID: 706260581}
+  borderWater: []
   unitsOnLand: []
   name: Redwyne Strights
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &1353462928
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6904,7 +7027,7 @@ Transform:
   m_GameObject: {fileID: 1361188574}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.0577984, y: -8.659977, z: -5}
+  m_LocalPosition: {x: -7.0577984, y: -8.659977, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6927,10 +7050,12 @@ MonoBehaviour:
   - {fileID: 969666002}
   - {fileID: 11914535}
   - {fileID: 1879555278}
+  borderWater: []
   unitsOnLand: []
   name: Highgarden
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &1361188577
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7096,10 +7221,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   borderLand: []
+  borderWater: []
   unitsOnLand: []
   name: Pyke Port
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!58 &1428351382
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7214,7 +7341,7 @@ Transform:
   m_GameObject: {fileID: 1536823901}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.774, y: -14.192, z: -5}
+  m_LocalPosition: {x: 0.774, y: -14.192, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7232,11 +7359,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 597299814}
+  - {fileID: 1171903076}
+  - {fileID: 1649374257}
+  - {fileID: 398055145}
+  - {fileID: 622367283}
+  - {fileID: 1016441812}
+  borderWater: []
   unitsOnLand: []
   name: Shipsbreaker Bay
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &1536823904
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7317,7 +7452,7 @@ Transform:
   m_GameObject: {fileID: 1576712683}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.199, y: 5.011, z: 0}
+  m_LocalPosition: {x: -0.199, y: 5.011, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7337,10 +7472,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   borderLand:
   - {fileID: 250548817}
+  borderWater: []
   unitsOnLand: []
   name: Widows Watch
   isSupply: 1
   isCastle: 0
+  isShip: 0
 --- !u!212 &1576712687
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7515,7 +7652,7 @@ Transform:
   m_GameObject: {fileID: 1649374255}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.4241836, y: -3.9320712, z: -5}
+  m_LocalPosition: {x: -0.4241836, y: -3.9320712, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7538,10 +7675,12 @@ MonoBehaviour:
   - {fileID: 262347007}
   - {fileID: 1723405689}
   - {fileID: 470688236}
+  borderWater: []
   unitsOnLand: []
   name: Crackclaw Point
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &1649374258
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7622,7 +7761,7 @@ Transform:
   m_GameObject: {fileID: 1649752222}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.344, y: 5.343, z: 0}
+  m_LocalPosition: {x: -7.344, y: 5.343, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7642,10 +7781,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   borderLand:
   - {fileID: 672451776}
+  borderWater: []
   unitsOnLand: []
   name: The Stony Shore
   isSupply: 1
   isCastle: 0
+  isShip: 0
 --- !u!212 &1649752226
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7867,10 +8008,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   borderLand: []
+  borderWater: []
   unitsOnLand: []
   name: Winterfell Port
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!58 &1660368049
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7986,7 +8129,7 @@ Transform:
   m_GameObject: {fileID: 1691231924}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.294, y: -3.612, z: 0}
+  m_LocalPosition: {x: -7.294, y: -3.612, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8123,10 +8266,12 @@ MonoBehaviour:
   - {fileID: 303290752}
   - {fileID: 1044477465}
   - {fileID: 67519048}
+  borderWater: []
   unitsOnLand: []
   name: Lannisport
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &1691231928
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8207,7 +8352,7 @@ Transform:
   m_GameObject: {fileID: 1723405686}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.248, y: -5.892, z: 0}
+  m_LocalPosition: {x: -4.248, y: -5.892, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8342,10 +8487,12 @@ MonoBehaviour:
   - {fileID: 1649374257}
   - {fileID: 470688236}
   - {fileID: 969666002}
+  borderWater: []
   unitsOnLand: []
   name: Blackwater
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &1723405690
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8514,7 +8661,7 @@ Transform:
   m_GameObject: {fileID: 1768154656}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.1987842, y: -13.69886, z: -5}
+  m_LocalPosition: {x: -1.1987842, y: -13.69886, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8532,11 +8679,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 1649374257}
+  - {fileID: 470688236}
+  - {fileID: 398055145}
+  borderWater: []
   unitsOnLand: []
   name: Blackwater Bay
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &1768154659
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8659,7 +8811,7 @@ Transform:
   m_GameObject: {fileID: 1852786355}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.7366519, y: -0.052638054, z: -5}
+  m_LocalPosition: {x: -0.7366519, y: -0.052638054, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8678,10 +8830,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   borderLand: []
+  borderWater: []
   unitsOnLand: []
   name: Lannisport Port
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &1852786358
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8761,7 +8915,7 @@ Transform:
   m_GameObject: {fileID: 1873878278}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.607, y: -10.312, z: -5}
+  m_LocalPosition: {x: -2.607, y: -10.312, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8786,10 +8940,12 @@ MonoBehaviour:
   - {fileID: 11914535}
   - {fileID: 780595805}
   - {fileID: 1229304618}
+  borderWater: []
   unitsOnLand: []
   name: The Boneway
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &1873878281
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8869,7 +9025,7 @@ Transform:
   m_GameObject: {fileID: 1875232250}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.40499997, y: -12.451, z: -5}
+  m_LocalPosition: {x: 0.40499997, y: -12.451, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8891,10 +9047,12 @@ MonoBehaviour:
   borderLand:
   - {fileID: 1229304618}
   - {fileID: 1239973800}
+  borderWater: []
   unitsOnLand: []
   name: Sunspear
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &1875232253
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8974,7 +9132,7 @@ Transform:
   m_GameObject: {fileID: 1879555276}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.816153, y: -10.90798, z: -5}
+  m_LocalPosition: {x: -7.816153, y: -10.90798, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8997,10 +9155,12 @@ MonoBehaviour:
   - {fileID: 1361188576}
   - {fileID: 11914535}
   - {fileID: 1319147630}
+  borderWater: []
   unitsOnLand: []
   name: Oldtown
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &1879555279
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9149,7 +9309,7 @@ Transform:
   m_GameObject: {fileID: 1998109299}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.65486056, y: -1.0880951, z: -5}
+  m_LocalPosition: {x: -0.65486056, y: -1.0880951, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9172,10 +9332,12 @@ MonoBehaviour:
   - {fileID: 1212306171}
   - {fileID: 73568683}
   - {fileID: 1649374257}
+  borderWater: []
   unitsOnLand: []
   name: The Mountains of the Moon
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &1998109302
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9255,7 +9417,7 @@ Transform:
   m_GameObject: {fileID: 2011635269}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.668688, y: -10.589858, z: -5}
+  m_LocalPosition: {x: -10.668688, y: -10.589858, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9273,11 +9435,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 478490793}
+  - {fileID: 67519048}
+  borderWater: []
   unitsOnLand: []
   name: Sunset Sea
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &2011635272
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9357,7 +9523,7 @@ Transform:
   m_GameObject: {fileID: 2031935347}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.0455699, y: -8.02139, z: -5}
+  m_LocalPosition: {x: -1.0455699, y: -8.02139, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9375,11 +9541,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 1576712685}
+  - {fileID: 250548817}
+  - {fileID: 67585110}
+  - {fileID: 1115964345}
+  - {fileID: 242157723}
+  - {fileID: 1212306171}
+  - {fileID: 1998109301}
+  - {fileID: 73568683}
+  - {fileID: 1649374257}
+  borderWater: []
   unitsOnLand: []
   name: The Narrow Sea
   isSupply: 0
   isCastle: 0
+  isShip: 0
 --- !u!212 &2031935350
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9541,6 +9718,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knight
       objectReference: {fileID: 0}
+    - target: {fileID: 7026141256031984298, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8239429399116329969, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
       propertyPath: collider2D
       value: 
@@ -9662,6 +9843,10 @@ PrefabInstance:
       propertyPath: collider2D
       value: 
       objectReference: {fileID: 41266843}
+    - target: {fileID: 3766063217999237770, guid: 27b23e1be3e2ad946bf79deb1da7586b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4225405163770943760, guid: 27b23e1be3e2ad946bf79deb1da7586b, type: 3}
       propertyPath: m_Name
       value: Footman

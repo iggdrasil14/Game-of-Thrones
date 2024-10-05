@@ -4,10 +4,12 @@ using UnityEngine;
 public class Land : MonoBehaviour
 {
     public List<Land> borderLand;
+    public List<Water> borderWater;
     public List<Unit> unitsOnLand;
     public string name;
     public bool isSupply;
     public bool isCastle;
+    public bool isShip;
 
     public void AddUnit(Unit unit)
     {
