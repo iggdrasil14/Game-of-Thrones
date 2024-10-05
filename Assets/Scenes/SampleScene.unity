@@ -168,7 +168,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 1879555278}
+  - {fileID: 1361188576}
+  - {fileID: 11914535}
+  - {fileID: 1873878280}
+  - {fileID: 780595805}
+  - {fileID: 1319147630}
   unitsOnLand: []
   name: Dornish Marches
   isSupply: 0
@@ -215,7 +221,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 965562564604275478fd28f0ae34490e, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -431,7 +437,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 1691231927}
+  - {fileID: 1044477465}
+  - {fileID: 1723405689}
+  - {fileID: 969666002}
+  - {fileID: 1361188576}
   unitsOnLand: []
   name: Searoad Marches
   isSupply: 0
@@ -478,7 +489,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 40128c252156e9c41a45bb3ec4647e29, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -616,7 +627,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1eee402b55378624189289977d38390a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.34901962}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -671,7 +682,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 1998109301}
   unitsOnLand: []
   name: The Eyrie
   isSupply: 0
@@ -718,7 +730,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f40f04af1e3a98b43854c7eb8164b547, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -863,7 +875,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 1115964345}
+  - {fileID: 1018129647}
+  - {fileID: 478490793}
   unitsOnLand: []
   name: Graywater Watch
   isSupply: 0
@@ -910,7 +925,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 04b6ad5e80170384e9ceed990aa6dcd1, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1162,7 +1177,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 1115964345}
+  - {fileID: 1018129647}
+  - {fileID: 1212306171}
+  - {fileID: 1998109301}
   unitsOnLand: []
   name: The Twins
   isSupply: 0
@@ -1209,7 +1228,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 90e4f904278ddb54aa86053b65c8000f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1266,7 +1285,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 672451776}
+  - {fileID: 1576712685}
+  - {fileID: 1115964345}
   unitsOnLand: []
   name: White Harbor
   isSupply: 0
@@ -1313,7 +1335,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e9e112e1935f5904c8035b7ab7bb19b6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1501,7 +1523,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 303290752}
+  - {fileID: 1044477465}
+  - {fileID: 1723405689}
+  - {fileID: 1649374257}
   unitsOnLand: []
   name: Harrenhal
   isSupply: 0
@@ -1548,7 +1574,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fcb77888fb268fc44a5140a14e218713, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1650,7 +1676,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: dc881e81f4d1adb46a62d390ea81a031, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1813,7 +1839,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 1018129647}
+  - {fileID: 1691231927}
+  - {fileID: 1044477465}
+  - {fileID: 262347007}
   unitsOnLand: []
   name: Riverrun
   isSupply: 0
@@ -1860,7 +1890,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fcfb726fa5713394b8603eeba3b7e77a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1916,7 +1946,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 672451776}
+  - {fileID: 834320816}
   unitsOnLand: []
   name: Carhold
   isSupply: 0
@@ -1963,7 +1995,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9372db44628ee8c4fa3e10fa943f5a42, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2178,7 +2210,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 67e2eb2a663a82544a18d21da6aaea3d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2233,7 +2265,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 470688236}
+  - {fileID: 969666002}
+  - {fileID: 1873878280}
+  - {fileID: 622367283}
   unitsOnLand: []
   name: Kingswood
   isSupply: 0
@@ -2280,7 +2316,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c5747b71caa5e50499ed0e552da57977, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2401,7 +2437,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 1649374257}
+  - {fileID: 1723405689}
+  - {fileID: 969666002}
+  - {fileID: 398055145}
   unitsOnLand: []
   name: Kings Landing
   isSupply: 0
@@ -2448,7 +2488,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4a098ea4ba3866b4d8711398b59dfa66, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2592,7 +2632,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 166415532}
   unitsOnLand: []
   name: Futs Finger
   isSupply: 0
@@ -2639,7 +2680,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 15dd3df9d6b93df4694448cdf271d9b5, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2879,7 +2920,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f640ec13fd7836b439672850443b95a7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3397,7 +3438,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 398055145}
+  - {fileID: 1873878280}
   unitsOnLand: []
   name: Storms End
   isSupply: 0
@@ -3444,7 +3487,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e597e40550363ab49849547fed782f47, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3872,7 +3915,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2f1060ff1a90537469531c3facbfab84, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3974,7 +4017,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: bea092408fceb5043a319e04043fc977, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4131,7 +4174,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 1319147630}
+  - {fileID: 11914535}
+  - {fileID: 1873878280}
+  - {fileID: 1229304618}
+  - {fileID: 805618683}
   unitsOnLand: []
   name: Princes Pass
   isSupply: 0
@@ -4178,7 +4226,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d26ef36b43970c04c814762c81298bc2, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4233,7 +4281,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 780595805}
+  - {fileID: 1229304618}
+  - {fileID: 1239973800}
   unitsOnLand: []
   name: Starfall
   isSupply: 0
@@ -4280,7 +4331,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d2f7685094f8b504289a82de750f3a20, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4458,7 +4509,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 48a08e62b47d8ae42bfb86bd3df0a040, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4514,7 +4565,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 672451776}
+  - {fileID: 311042951}
   unitsOnLand: []
   name: Castle Black
   isSupply: 0
@@ -4561,7 +4614,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4062cb0a9efb7ca4abbaf836e6ba9e8d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5011,7 +5064,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 1361188576}
+  - {fileID: 67519048}
+  - {fileID: 1723405689}
+  - {fileID: 470688236}
+  - {fileID: 398055145}
+  - {fileID: 1873878280}
+  - {fileID: 11914535}
   unitsOnLand: []
   name: The Reach
   isSupply: 0
@@ -5058,7 +5118,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1578f127fa298e9428437fe2992c6295, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5160,7 +5220,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c6fbeae08c21995469f7ebbbdb5088b8, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5320,7 +5380,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 166415532}
+  - {fileID: 1115964345}
+  - {fileID: 242157723}
+  - {fileID: 303290752}
   unitsOnLand: []
   name: Seagard
   isSupply: 0
@@ -5367,7 +5431,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5d5da9a000b92bd4e869e8975ef0de00, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5528,7 +5592,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 1691231927}
+  - {fileID: 303290752}
+  - {fileID: 262347007}
+  - {fileID: 67519048}
+  - {fileID: 1723405689}
   unitsOnLand: []
   name: StoneySept
   isSupply: 0
@@ -5575,7 +5644,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e6a81e52b3bf97f4cbea1be8b673e6f0, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5663,7 +5732,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 672451776}
+  - {fileID: 250548817}
+  - {fileID: 166415532}
+  - {fileID: 1018129647}
+  - {fileID: 242157723}
   unitsOnLand: []
   name: Moat Cailin
   isSupply: 0
@@ -5710,7 +5784,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 299638c52610e1649adc8d6611aef4ae, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5916,7 +5990,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1949d9d8a38f9f84a8953dd7c377293d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6218,7 +6292,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 242157723}
+  - {fileID: 1998109301}
   unitsOnLand: []
   name: The Fingers
   isSupply: 0
@@ -6265,7 +6341,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 09ed7364e09921548bfe3851ffa7a616, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6320,7 +6396,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 1873878280}
+  - {fileID: 780595805}
+  - {fileID: 805618683}
+  - {fileID: 1239973800}
+  - {fileID: 1875232252}
   unitsOnLand: []
   name: Yronwood
   isSupply: 0
@@ -6367,7 +6448,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7fb9aa5f7d678524b82ef88280a09877, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6422,7 +6503,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 805618683}
+  - {fileID: 1229304618}
+  - {fileID: 1875232252}
   unitsOnLand: []
   name: Salt Shore
   isSupply: 0
@@ -6469,7 +6553,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c629264cd07236c40851a00a15769c1f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6529,7 +6613,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 1879555278}
+  - {fileID: 11914535}
+  - {fileID: 780595805}
   unitsOnLand: []
   name: Three Towers
   isSupply: 0
@@ -6576,7 +6663,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7530dc4d03b8b754aa5bd6686519f888, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6835,7 +6922,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 67519048}
+  - {fileID: 969666002}
+  - {fileID: 11914535}
+  - {fileID: 1879555278}
   unitsOnLand: []
   name: Highgarden
   isSupply: 0
@@ -6882,7 +6973,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c6b56230b8960ae42baeeabf7232c30e, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7086,7 +7177,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f93a16cff6a82d34cb35b90de2ae7a66, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.34901962}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7244,7 +7335,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 250548817}
   unitsOnLand: []
   name: Widows Watch
   isSupply: 1
@@ -7291,7 +7383,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2b48b70edc4b45c4da4944fbfe7e44a6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7441,7 +7533,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 1998109301}
+  - {fileID: 262347007}
+  - {fileID: 1723405689}
+  - {fileID: 470688236}
   unitsOnLand: []
   name: Crackclaw Point
   isSupply: 0
@@ -7488,7 +7584,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e45da5a1a3f2d0a4f81c19d121649395, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7544,7 +7640,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 672451776}
   unitsOnLand: []
   name: The Stony Shore
   isSupply: 1
@@ -7591,7 +7688,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e584d87ac3d745d4499d8c67fb673505, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7851,7 +7948,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1eee402b55378624189289977d38390a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8022,7 +8119,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 303290752}
+  - {fileID: 1044477465}
+  - {fileID: 67519048}
   unitsOnLand: []
   name: Lannisport
   isSupply: 0
@@ -8069,7 +8169,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c516d1d2d8bb7914c8b1d64be091e5ce, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8235,7 +8335,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 67519048}
+  - {fileID: 1044477465}
+  - {fileID: 262347007}
+  - {fileID: 1649374257}
+  - {fileID: 470688236}
+  - {fileID: 969666002}
   unitsOnLand: []
   name: Blackwater
   isSupply: 0
@@ -8282,7 +8388,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2b35172b04653e54aa63d5551385ae9d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8618,7 +8724,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 151ff3d025c36bc4e92150e9d7153cff, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8673,7 +8779,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 622367283}
+  - {fileID: 398055145}
+  - {fileID: 969666002}
+  - {fileID: 11914535}
+  - {fileID: 780595805}
+  - {fileID: 1229304618}
   unitsOnLand: []
   name: The Boneway
   isSupply: 0
@@ -8720,7 +8832,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a5abce09a242b914c87b79a636bebf28, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8776,7 +8888,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 1229304618}
+  - {fileID: 1239973800}
   unitsOnLand: []
   name: Sunspear
   isSupply: 0
@@ -8823,7 +8937,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2eb312bfc7d9594429c5db9cc40fcd5a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8879,7 +8993,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 1361188576}
+  - {fileID: 11914535}
+  - {fileID: 1319147630}
   unitsOnLand: []
   name: Oldtown
   isSupply: 0
@@ -8926,7 +9043,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 192a86e5548462f44a526f48612dda9c, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9050,7 +9167,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7623158ffe3c4934689807e790e36bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  borderLand: []
+  borderLand:
+  - {fileID: 242157723}
+  - {fileID: 1212306171}
+  - {fileID: 73568683}
+  - {fileID: 1649374257}
   unitsOnLand: []
   name: The Mountains of the Moon
   isSupply: 0
@@ -9097,7 +9218,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6d175d6ec70b8ba43b1c6d7cdaff2fe2, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
