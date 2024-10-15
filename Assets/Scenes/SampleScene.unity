@@ -180,7 +180,8 @@ MonoBehaviour:
   name: Dornish Marches
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &11914536
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -410,7 +411,8 @@ MonoBehaviour:
   name: Searoad Marches
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &67519049
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -515,7 +517,8 @@ MonoBehaviour:
   name: White Harbor Port
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!58 &67585111
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -655,7 +658,8 @@ MonoBehaviour:
   name: The Eyrie
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &73568684
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -847,12 +851,14 @@ MonoBehaviour:
   - {fileID: 1115964345}
   - {fileID: 1018129647}
   - {fileID: 478490793}
-  borderWater: []
+  borderWater:
+  - {fileID: 610242555}
   unitsOnLand: []
   name: Graywater Watch
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &166415533
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -961,7 +967,8 @@ MonoBehaviour:
   name: East Summer Sea
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &175198781
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1164,7 +1171,8 @@ MonoBehaviour:
   name: The Twins
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &242157724
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1268,12 +1276,15 @@ MonoBehaviour:
   - {fileID: 672451776}
   - {fileID: 1576712685}
   - {fileID: 1115964345}
-  borderWater: []
-  unitsOnLand: []
+  borderWater:
+  - {fileID: 862490534}
+  unitsOnLand:
+  - {fileID: 315195847}
   name: White Harbor
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &250548819
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1514,7 +1525,8 @@ MonoBehaviour:
   name: Harrenhal
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &262347008
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1618,7 +1630,8 @@ MonoBehaviour:
   name: OldtownPort
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &300891613
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1834,7 +1847,8 @@ MonoBehaviour:
   name: Riverrun
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &303290753
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1936,12 +1950,14 @@ MonoBehaviour:
   borderLand:
   - {fileID: 672451776}
   - {fileID: 834320816}
-  borderWater: []
+  borderWater:
+  - {fileID: 862490534}
   unitsOnLand: []
   name: Carhold
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &311042953
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2107,6 +2123,79 @@ PolygonCollider2D:
       - {x: 0.36499998, y: -1.27}
       - {x: 0.615, y: -1.27}
   m_UseDelaunayMesh: 0
+--- !u!1001 &315195845
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 469591245}
+    m_Modifications:
+    - target: {fileID: 596546115650411520, guid: 27b23e1be3e2ad946bf79deb1da7586b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 596546115650411520, guid: 27b23e1be3e2ad946bf79deb1da7586b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 596546115650411520, guid: 27b23e1be3e2ad946bf79deb1da7586b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 596546115650411520, guid: 27b23e1be3e2ad946bf79deb1da7586b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 596546115650411520, guid: 27b23e1be3e2ad946bf79deb1da7586b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 596546115650411520, guid: 27b23e1be3e2ad946bf79deb1da7586b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 596546115650411520, guid: 27b23e1be3e2ad946bf79deb1da7586b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 596546115650411520, guid: 27b23e1be3e2ad946bf79deb1da7586b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 596546115650411520, guid: 27b23e1be3e2ad946bf79deb1da7586b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 596546115650411520, guid: 27b23e1be3e2ad946bf79deb1da7586b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4225405163770943760, guid: 27b23e1be3e2ad946bf79deb1da7586b, type: 3}
+      propertyPath: m_Name
+      value: Footman (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 27b23e1be3e2ad946bf79deb1da7586b, type: 3}
+--- !u!4 &315195846 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 596546115650411520, guid: 27b23e1be3e2ad946bf79deb1da7586b, type: 3}
+  m_PrefabInstance: {fileID: 315195845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &315195847 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3391764811401200685, guid: 27b23e1be3e2ad946bf79deb1da7586b, type: 3}
+  m_PrefabInstance: {fileID: 315195845}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9ba5d621275ea84897b5ef576dfb154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &354786282
 GameObject:
   m_ObjectHideFlags: 0
@@ -2158,7 +2247,8 @@ MonoBehaviour:
   name: Sunspear Port
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &354786285
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2266,7 +2356,8 @@ MonoBehaviour:
   name: Kingswood
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &398055146
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2380,7 +2471,11 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1405761152}
+  - {fileID: 1542028905}
+  - {fileID: 1018247222}
   - {fileID: 41266842}
+  - {fileID: 315195846}
+  - {fileID: 1409257486}
   m_Father: {fileID: 1045079057}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &470688234
@@ -2438,7 +2533,8 @@ MonoBehaviour:
   name: Kings Landing
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &470688237
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2627,12 +2723,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   borderLand:
   - {fileID: 166415532}
-  borderWater: []
-  unitsOnLand: []
+  borderWater:
+  - {fileID: 610242555}
+  unitsOnLand:
+  - {fileID: 1018247223}
   name: Futs Finger
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &478490794
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2874,7 +2973,8 @@ MonoBehaviour:
   name: Dragonstone
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &597299815
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2956,7 +3056,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a531098c267637e4a8547d8ed987ea68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  landTest: {fileID: 672451776}
 --- !u!4 &603662497
 Transform:
   m_ObjectHideFlags: 0
@@ -3258,11 +3357,13 @@ MonoBehaviour:
   - {fileID: 478490793}
   - {fileID: 166415532}
   borderWater: []
-  unitsOnLand: []
+  unitsOnLand:
+  - {fileID: 1409257488}
   name: Bay of Ice
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &610242556
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3451,7 +3552,8 @@ MonoBehaviour:
   name: Storms End
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &622367284
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3560,7 +3662,8 @@ MonoBehaviour:
   name: West Summer Sea
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &638093921
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3881,14 +3984,17 @@ MonoBehaviour:
   - {fileID: 250548817}
   - {fileID: 311042951}
   - {fileID: 834320816}
-  borderWater: []
+  borderWater:
+  - {fileID: 610242555}
+  - {fileID: 862490534}
   unitsOnLand:
   - {fileID: 41266844}
   - {fileID: 1405761153}
   name: Winterfell
   isSupply: 1
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &672451777
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3941,6 +4047,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &677958929
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 677958931}
+  - component: {fileID: 677958930}
+  m_Layer: 0
+  m_Name: PLAYERINPUT
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &677958930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677958929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd35d94f22abc1541bdc53b3c0c3e9e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tokenPrefab: {fileID: 6090832836653385429, guid: 1e9ccb6e346244a46bc91e253ee0a3e1, type: 3}
+--- !u!4 &677958931
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677958929}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.8118085, y: 8.603745, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &706260579
 GameObject:
   m_ObjectHideFlags: 0
@@ -3992,7 +4143,8 @@ MonoBehaviour:
   name: The Arbor
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &706260582
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4100,7 +4252,8 @@ MonoBehaviour:
   name: The Golden Sound
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &755723323
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4209,7 +4362,8 @@ MonoBehaviour:
   name: Princes Pass
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &780595806
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4316,7 +4470,8 @@ MonoBehaviour:
   name: Starfall
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &805618684
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4496,7 +4651,8 @@ MonoBehaviour:
   name: Pyke
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &812177289
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4598,12 +4754,15 @@ MonoBehaviour:
   borderLand:
   - {fileID: 672451776}
   - {fileID: 311042951}
-  borderWater: []
+  borderWater:
+  - {fileID: 610242555}
+  - {fileID: 862490534}
   unitsOnLand: []
   name: Castle Black
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &834320818
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4967,13 +5126,13 @@ MonoBehaviour:
   - {fileID: 672451776}
   - {fileID: 311042951}
   - {fileID: 834320816}
-  borderWater:
-  - {fileID: 0}
+  borderWater: []
   unitsOnLand: []
   name: The Shivering Sea
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &862490535
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5117,7 +5276,8 @@ MonoBehaviour:
   name: The Reach
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &969666003
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5221,7 +5381,8 @@ MonoBehaviour:
   name: Storms End Port
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &1016441813
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5434,7 +5595,8 @@ MonoBehaviour:
   name: Seagard
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &1018129648
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5487,6 +5649,79 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1018247221
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 469591245}
+    m_Modifications:
+    - target: {fileID: 4189190470446226382, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189190470446226382, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189190470446226382, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189190470446226382, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189190470446226382, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189190470446226382, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189190470446226382, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189190470446226382, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189190470446226382, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189190470446226382, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4965042472984335302, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
+      propertyPath: m_Name
+      value: Knight (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
+--- !u!4 &1018247222 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4189190470446226382, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
+  m_PrefabInstance: {fileID: 1018247221}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1018247223 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8239429399116329969, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
+  m_PrefabInstance: {fileID: 1018247221}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9ba5d621275ea84897b5ef576dfb154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1044477462
 GameObject:
   m_ObjectHideFlags: 0
@@ -5649,7 +5884,8 @@ MonoBehaviour:
   name: StoneySept
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &1044477466
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5791,7 +6027,8 @@ MonoBehaviour:
   name: Moat Cailin
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &1115964347
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5999,7 +6236,8 @@ MonoBehaviour:
   name: Dragonstone Port
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &1171903077
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6109,7 +6347,8 @@ MonoBehaviour:
   name: Ironmans Bay
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &1188975186
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6360,7 +6599,8 @@ MonoBehaviour:
   name: The Fingers
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &1212306172
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6469,7 +6709,8 @@ MonoBehaviour:
   name: Yronwood
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &1229304619
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6576,7 +6817,8 @@ MonoBehaviour:
   name: Salt Shore
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &1239973801
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6683,7 +6925,8 @@ MonoBehaviour:
   name: Three Towers
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &1319147631
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6791,7 +7034,8 @@ MonoBehaviour:
   name: Sea of Dorn
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &1339329862
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6900,7 +7144,8 @@ MonoBehaviour:
   name: Redwyne Strights
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &1353462928
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7008,7 +7253,8 @@ MonoBehaviour:
   name: Highgarden
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &1361188577
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7077,6 +7323,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9ba5d621275ea84897b5ef576dfb154, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1409257486 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4356679668494033297, guid: 8680ca9df6a8ded44a339f4795a37978, type: 3}
+  m_PrefabInstance: {fileID: 1950776792773314411}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1409257488 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1442394457578324158, guid: 8680ca9df6a8ded44a339f4795a37978, type: 3}
+  m_PrefabInstance: {fileID: 1950776792773314411}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9ba5d621275ea84897b5ef576dfb154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1428351379
 GameObject:
   m_ObjectHideFlags: 0
@@ -7129,7 +7391,8 @@ MonoBehaviour:
   name: Pyke Port
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!58 &1428351382
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7274,7 +7537,8 @@ MonoBehaviour:
   name: Shipsbreaker Bay
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &1536823904
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7327,6 +7591,79 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1542028904
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 469591245}
+    m_Modifications:
+    - target: {fileID: 4189190470446226382, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189190470446226382, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189190470446226382, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189190470446226382, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189190470446226382, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189190470446226382, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189190470446226382, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189190470446226382, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189190470446226382, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189190470446226382, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4965042472984335302, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
+      propertyPath: m_Name
+      value: Knight (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
+--- !u!4 &1542028905 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4189190470446226382, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
+  m_PrefabInstance: {fileID: 1542028904}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1542028906 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8239429399116329969, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
+  m_PrefabInstance: {fileID: 1542028904}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9ba5d621275ea84897b5ef576dfb154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1576712683
 GameObject:
   m_ObjectHideFlags: 0
@@ -7375,12 +7712,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   borderLand:
   - {fileID: 250548817}
-  borderWater: []
+  borderWater:
+  - {fileID: 862490534}
   unitsOnLand: []
   name: Widows Watch
   isSupply: 1
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &1576712687
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7583,7 +7922,8 @@ MonoBehaviour:
   name: Crackclaw Point
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &1649374258
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7684,12 +8024,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   borderLand:
   - {fileID: 672451776}
-  borderWater: []
-  unitsOnLand: []
+  borderWater:
+  - {fileID: 610242555}
+  unitsOnLand:
+  - {fileID: 1542028906}
   name: The Stony Shore
   isSupply: 1
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &1649752226
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7916,7 +8259,8 @@ MonoBehaviour:
   name: Winterfell Port
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!58 &1660368049
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8174,7 +8518,8 @@ MonoBehaviour:
   name: Lannisport
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &1691231928
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8395,7 +8740,8 @@ MonoBehaviour:
   name: Blackwater
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &1723405690
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8586,7 +8932,8 @@ MonoBehaviour:
   name: Blackwater Bay
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &1768154659
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8668,6 +9015,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 862490532}
   - {fileID: 610242553}
   - {fileID: 2011635270}
   - {fileID: 1188975184}
@@ -8679,7 +9027,6 @@ Transform:
   - {fileID: 1536823902}
   - {fileID: 1768154657}
   - {fileID: 2031935348}
-  - {fileID: 862490532}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1852786355
@@ -8733,7 +9080,8 @@ MonoBehaviour:
   name: Lannisport Port
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &1852786358
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8843,7 +9191,8 @@ MonoBehaviour:
   name: The Boneway
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &1873878281
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8950,7 +9299,8 @@ MonoBehaviour:
   name: Sunspear
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &1875232253
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9058,7 +9408,8 @@ MonoBehaviour:
   name: Oldtown
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &1879555279
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9235,7 +9586,8 @@ MonoBehaviour:
   name: The Mountains of the Moon
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &1998109302
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9341,7 +9693,8 @@ MonoBehaviour:
   name: Sunset Sea
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &2011635272
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9454,7 +9807,8 @@ MonoBehaviour:
   name: The Narrow Sea
   isSupply: 0
   isCastle: 0
-  isShip: 0
+  token: {fileID: 0}
+  tokenPrefab: {fileID: 0}
 --- !u!212 &2031935350
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9507,6 +9861,71 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1950776792773314411
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 469591245}
+    m_Modifications:
+    - target: {fileID: 1421818048414259336, guid: 8680ca9df6a8ded44a339f4795a37978, type: 3}
+      propertyPath: m_Name
+      value: Ship
+      objectReference: {fileID: 0}
+    - target: {fileID: 1442394457578324158, guid: 8680ca9df6a8ded44a339f4795a37978, type: 3}
+      propertyPath: redCirclePrefab
+      value: 
+      objectReference: {fileID: 4793052471478229085, guid: 7400ee1b072ea5b4094bc3dad62aa4e3, type: 3}
+    - target: {fileID: 1442394457578324158, guid: 8680ca9df6a8ded44a339f4795a37978, type: 3}
+      propertyPath: greenCirclePrefab
+      value: 
+      objectReference: {fileID: 2628447816320857187, guid: 253626791f73f5e409158f78d617f616, type: 3}
+    - target: {fileID: 4356679668494033297, guid: 8680ca9df6a8ded44a339f4795a37978, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.175
+      objectReference: {fileID: 0}
+    - target: {fileID: 4356679668494033297, guid: 8680ca9df6a8ded44a339f4795a37978, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.491
+      objectReference: {fileID: 0}
+    - target: {fileID: 4356679668494033297, guid: 8680ca9df6a8ded44a339f4795a37978, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4356679668494033297, guid: 8680ca9df6a8ded44a339f4795a37978, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4356679668494033297, guid: 8680ca9df6a8ded44a339f4795a37978, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4356679668494033297, guid: 8680ca9df6a8ded44a339f4795a37978, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4356679668494033297, guid: 8680ca9df6a8ded44a339f4795a37978, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4356679668494033297, guid: 8680ca9df6a8ded44a339f4795a37978, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4356679668494033297, guid: 8680ca9df6a8ded44a339f4795a37978, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4356679668494033297, guid: 8680ca9df6a8ded44a339f4795a37978, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8680ca9df6a8ded44a339f4795a37978, type: 3}
 --- !u!1001 &2642435169934967552
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9517,11 +9936,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4189190470446226382, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.718
+      value: 1.45
       objectReference: {fileID: 0}
     - target: {fileID: 4189190470446226382, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.012
+      value: 6.67
       objectReference: {fileID: 0}
     - target: {fileID: 4189190470446226382, guid: ffa3a49427dbd194f9e82e1b2dbe9720, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9574,11 +9993,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 596546115650411520, guid: 27b23e1be3e2ad946bf79deb1da7586b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.194
+      value: 2.11
       objectReference: {fileID: 0}
     - target: {fileID: 596546115650411520, guid: 27b23e1be3e2ad946bf79deb1da7586b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.5
+      value: 4.03
       objectReference: {fileID: 0}
     - target: {fileID: 596546115650411520, guid: 27b23e1be3e2ad946bf79deb1da7586b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9626,6 +10045,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
+  - {fileID: 677958931}
   - {fileID: 619394802}
   - {fileID: 1740438936}
   - {fileID: 1983860936}

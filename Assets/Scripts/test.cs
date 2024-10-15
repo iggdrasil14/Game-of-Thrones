@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class test : MonoBehaviour
 {
-    public Land landTest;
-    // Start is called before the first frame update
     void Start()
     {
         
@@ -16,7 +14,11 @@ public class test : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Tokens.TokenMarch(landTest);
+            var lands = FindObjectsByType<Land>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+            for (int i = 0; i < lands.Length; i++) 
+            {
+                lands[i].CompleteTurn();
+            }
         }
     }
 }
