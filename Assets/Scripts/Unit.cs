@@ -1,9 +1,19 @@
 ﻿using System.Collections;
 using UnityEngine;
-
+public enum House
+{
+    Stark,
+    Greyjoy,
+    Lannister,
+    Tyrell,
+    Martell,
+    Baratheon,
+    Neutral
+}
 public class Unit : MonoBehaviour
 {
     public Land FromLand { get; set; }                      // Земля с которой начинается движение  юнита.
+    public House house;
     public Collider2D collider2D;                           // Коллайдер юнита для определения столкновений.
     public bool isCanMove;                                  // Флаг определяет может ли юнит двигаться.
     public bool isDraged;                                   // Флаг определяет перетаскивается ли юнит игроком.

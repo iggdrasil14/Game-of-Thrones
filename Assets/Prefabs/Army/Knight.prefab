@@ -101,7 +101,7 @@ MonoBehaviour:
   collider2D: {fileID: 7996131236530490138}
   isCanMove: 0
   isDraged: 0
-  power: 0
+  power: 2
   greenCirclePrefab: {fileID: 2628447816320857187, guid: 253626791f73f5e409158f78d617f616, type: 3}
   redCirclePrefab: {fileID: 4793052471478229085, guid: 7400ee1b072ea5b4094bc3dad62aa4e3, type: 3}
 --- !u!61 &7996131236530490138

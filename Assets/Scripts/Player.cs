@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using JetBrains.Annotations;
+using System.Collections.Generic;
 using Unity.Burst.Intrinsics;
 
 public class Army
@@ -24,6 +25,40 @@ public class Army
         return power;
     }
 
+}
+public class Battle
+{
+    public List <Unit> unitsAttackers = new();
+    public List <Unit> unitsDefenders = new();
+    public Land land;
+    public House houseAttackers;
+    public House houseDefenders;
+
+    public void BattleExecute()
+    {
+        int powerAttackers = 0;
+        int powerDefenders = 0;
+        for(int i = 0;i < unitsAttackers.Count; i++)
+        {
+            powerAttackers += unitsAttackers[i].power;
+        }
+        for(int i = 0; i <= unitsDefenders.Count; i++)
+        {
+            powerDefenders += unitsDefenders[i].power;
+        }
+        if(powerAttackers > powerDefenders)
+        {
+            
+        }
+        if(powerAttackers < powerDefenders)
+        {
+
+        }
+        if(powerAttackers == powerDefenders)
+        {
+
+        }
+    }
 }
 public class Player
 {

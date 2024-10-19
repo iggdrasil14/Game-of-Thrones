@@ -5,10 +5,10 @@ using UnityEngine;
 public class PlayerInput : MonoBehaviour
 {
     public TokenChip tokenPrefab;
-    public static TokenChip TokenPrefab { get; private set; }
+    public static PlayerInput Instance { get; private set; }
 
     private void Awake()
     {
-        TokenPrefab = tokenPrefab;
+        Instance = this;
     }
 }

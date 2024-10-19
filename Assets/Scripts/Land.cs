@@ -12,6 +12,7 @@ public class Land : MonoBehaviour
     public bool isSupply;
     public bool isCastle;
     public bool isHasToken;
+    public House house;     // прописать дома каждой земле.
 
     private void Awake()
     {
@@ -21,6 +22,17 @@ public class Land : MonoBehaviour
         }
     }
 
+    public bool IsBattle()
+    {
+        for (int i = 0; i < unitsOnLand.Count; i++)
+        {
+            if(house != unitsOnLand[i].house)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
     public void CompleteTurn()
     {
         for (int i = 0; i < unitsOnLand.Count; i++)
@@ -69,7 +81,7 @@ public class Land : MonoBehaviour
             return;
         }
         Vector2 tokenPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        var token = Instantiate(PlayerInput.TokenPrefab, tokenPosition, Quaternion.identity);
+        var token = Instantiate(PlayerInput.Instance.tokenPrefab, tokenPosition, Quaternion.identity);
         token.land = this;
         isHasToken = true;
     }

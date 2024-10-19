@@ -10,5 +10,6 @@ public class TokenChip : MonoBehaviour
         land.isHasToken = false;
         Tokens.TokenMarch(land);
         Destroy(gameObject);
+        GameUI.Instance.buttonDone.SetActive(true);
     }
 }
