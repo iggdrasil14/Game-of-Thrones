@@ -181,7 +181,7 @@ GameObject:
   - component: {fileID: 7121111521076666639}
   - component: {fileID: 3642315714261387903}
   m_Layer: 0
-  m_Name: SiegeEngine
+  m_Name: StarkSiegeEnginePrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
