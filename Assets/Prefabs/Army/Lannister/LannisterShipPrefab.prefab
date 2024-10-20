@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a9ae51fae8a4b65408546a49da4ce1b6, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.19215687, a: 1}
+  m_Color: {r: 1, g: 0.20784314, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9ba5d621275ea84897b5ef576dfb154, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  house: 0
+  house: 2
   collider2D: {fileID: 3988473358893859952}
   isCanMove: 0
   isDraged: 0

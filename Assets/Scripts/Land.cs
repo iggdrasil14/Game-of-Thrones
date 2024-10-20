@@ -12,7 +12,7 @@ public class Land : MonoBehaviour
     public bool isSupply;
     public bool isCastle;
     public bool isHasToken;
-    public House house;     // прописать дома каждой земле.
+    public House house;     
 
     private void Awake()
     {
@@ -32,6 +32,26 @@ public class Land : MonoBehaviour
             }
         }
         return false;
+    }
+
+    public void StartBattle()
+    {
+        Battle battle = new Battle();
+        battle.land = this;
+        for (int i = 0; i < unitsOnLand.Count; i++) 
+        {
+            if (unitsOnLand[i].house != house)
+            {
+                battle.unitsAttackers.Add(unitsOnLand[i]);
+                battle.houseAttackers = unitsOnLand[i].house;
+            }
+            else
+            {
+                battle.unitsDefenders.Add(unitsOnLand[i]);
+                battle.houseDefenders = unitsOnLand[i].house;
+            }
+        }
+        battle.BattleExecute();
     }
     public void CompleteTurn()
     {

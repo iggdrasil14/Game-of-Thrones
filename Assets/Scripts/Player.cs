@@ -1,6 +1,6 @@
-﻿using JetBrains.Annotations;
+﻿
 using System.Collections.Generic;
-using Unity.Burst.Intrinsics;
+using UnityEngine;
 
 public class Army
 {
@@ -42,21 +42,25 @@ public class Battle
         {
             powerAttackers += unitsAttackers[i].power;
         }
-        for(int i = 0; i <= unitsDefenders.Count; i++)
+        for(int i = 0; i < unitsDefenders.Count; i++)
         {
             powerDefenders += unitsDefenders[i].power;
         }
         if(powerAttackers > powerDefenders)
         {
-            
+            Debug.Log("Атакующие победили!");
         }
         if(powerAttackers < powerDefenders)
         {
-
+            Debug.Log("Защитники победили!");
+            for (int i = 0; i < unitsAttackers.Count; i++)
+            {
+                unitsAttackers[i].Retreat();
+            }
         }
         if(powerAttackers == powerDefenders)
         {
-
+            Debug.Log("Ничья");
         }
     }
 }

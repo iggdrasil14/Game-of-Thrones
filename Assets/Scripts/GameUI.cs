@@ -12,8 +12,15 @@ public class GameUI : MonoBehaviour
     }
     public void Attack()
     {
-        Battle battle = new Battle();
-        var lands = FindObjectOfType<Land>();
 
+        var lands = FindObjectsOfType<Land>();
+        for (int i = 0; i < lands.Length; i++) 
+        {
+            if (lands[i].IsBattle()) 
+            {
+                lands[i].StartBattle();
+                return;
+            }
+        }
     }
 }

@@ -12,7 +12,15 @@ public enum House
 }
 public class Unit : MonoBehaviour
 {
-    public Land FromLand { get; set; }                      // Земля с которой начинается движение  юнита.
+    private Land oldLand;                                   //
+    private Land fromLand;
+    public Land FromLand {
+        get => fromLand;
+        set 
+        {
+            oldLand = fromLand;
+            fromLand = value;
+        } }                      // Земля с которой начинается движение  юнита.
     public House house;
     public Collider2D collider2D;                           // Коллайдер юнита для определения столкновений.
     public bool isCanMove;                                  // Флаг определяет может ли юнит двигаться.
@@ -46,28 +54,40 @@ public class Unit : MonoBehaviour
     {
         if (Land.CurrentLand != null)                       // Проверяем, выбрана ли новая земля
         {
-            bool isReturn = true;
-            if (FromLand.CheckBorderLand(Land.CurrentLand) | FromLand.CheckBorderWater(Land.CurrentLand)) // Проверяем, граничит ли новая земля с текущей
+            if(house == Land.CurrentLand.house)
             {
-                int[] armyPower = GameRules.ArmyPower(0);
-                for (int i = 0; i < armyPower.Length; i++)
+                bool isReturn = true;
+                if (FromLand.CheckBorderLand(Land.CurrentLand) | FromLand.CheckBorderWater(Land.CurrentLand)) // Проверяем, граничит ли новая земля с текущей
                 {
-                    if(armyPower[i] >= Land.CurrentLand.unitsOnLand.Count)
+                    int[] armyPower = GameRules.ArmyPower(0);
+                    for (int i = 0; i < armyPower.Length; i++)
                     {
-                        FromLand.RemoveUnit(this);          // Убираем юнит с текущей земли
-                        isCanMove = false;                  // Запрещаем дальнейшее движение
-                        isDraged = false;                   // Прекращаем перетаскивание
-                        FromLand = Land.CurrentLand;        // Обновляем текущую землю юнита
-                        FromLand.AddUnit(this);             // Добавляем юнит на новую землю
-                        isReturn = false;
-                        break;
+                        if (armyPower[i] > Land.CurrentLand.unitsOnLand.Count)
+                        {
+                            FromLand.RemoveUnit(this);          // Убираем юнит с текущей земли
+                            isCanMove = false;                  // Запрещаем дальнейшее движение
+                            isDraged = false;                   // Прекращаем перетаскивание
+                            FromLand = Land.CurrentLand;        // Обновляем текущую землю юнита
+                            FromLand.AddUnit(this);             // Добавляем юнит на новую землю
+                            isReturn = false;
+                            break;
+                        }
                     }
                 }
+                if (isReturn == true)
+                {
+                    StartCoroutine(ReturnStartPoint());         // Если перемещение невозможно, возвращаем юнит в начальную точку
+                }
             }
-            if (isReturn == true)
+            else
             {
-                StartCoroutine(ReturnStartPoint());         // Если перемещение невозможно, возвращаем юнит в начальную точку
+                FromLand.RemoveUnit(this);          // Убираем юнит с текущей земли
+                isCanMove = false;                  // Запрещаем дальнейшее движение
+                isDraged = false;                   // Прекращаем перетаскивание
+                FromLand = Land.CurrentLand;        // Обновляем текущую землю юнита
+                FromLand.AddUnit(this);             // Добавляем юнит на новую землю
             }
+ 
         }
         RemoveMoveIndicator();                              // Удаляем индикатор после завершения перемещения
     }
@@ -156,5 +176,13 @@ public class Unit : MonoBehaviour
             Destroy(currentIndicator); 
             currentIndicator = null;
         }
+    }
+
+    public void Retreat()
+    {
+        StartCoroutine(ReturnStartPoint());
+        FromLand.RemoveUnit(this);
+        FromLand = oldLand;
+        FromLand.AddUnit(this);
     }
 }

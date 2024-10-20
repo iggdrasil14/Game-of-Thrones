@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9ba5d621275ea84897b5ef576dfb154, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  house: 0
+  house: 5
   collider2D: {fileID: 7996131236530490138}
   isCanMove: 0
   isDraged: 0

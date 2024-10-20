@@ -1,10 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class WesterosCardReference : MonoBehaviour
 {
-    public int wildlingsAttackPower = 0;    // Сила одичалых.
+    public int nightWatchPower = 0;         // Сила армии Ночного дозора.
+    public int[] supportHousePower = new int[5];
+    public int supportStarkPower;           // Сила подмоги от Дома Старков.
+    public int supportGreyjoyPower;         // Сила подмоги от Дома Грейджоев.
+    public int supportLannisterPower;       // Сила подмоги от Дома Ланнистеров.
+    public int supportTyrellPower;          // Сила подмоги от Дома Тиреллов.
+    public int supportMartellPower;         // Сила подмоги от Дома Мартеллов.
+    public int supportBaratheonPower;       // Сила подмоги от Дома Баратеонов.
+    public int wildlingsAttackPower = 0;    // Сила армии Одичалых.
+    public bool isVictory;                  // Флаг, если армия Ночного дозора победила.
     public void I_WinterIsComing()          // Зима близко.
     {
         // Описание из правил:
@@ -32,10 +42,7 @@ public class WesterosCardReference : MonoBehaviour
         // Количество карт этого типа в колоде I - 1.
 
         wildlingsAttackPower++;             // Знак одичалых на карте. Сила одичалых увеличивается на 2.
-        if (wildlingsAttackPower >= 12)     // Если значение силы одичалых достигло 12 разыгрывается событие аналогичное карте "Нашесткие одичалых".
-        {
-            III_WildlingsAttack();
-        }
+        IsWildingsAttack();                 // Метод проверяет началось ли нашествие Одичалых.
     }
 
     public void I_Mustering()               // Сбор войск.
@@ -82,10 +89,7 @@ public class WesterosCardReference : MonoBehaviour
         // Количество карт этого типа в колоде I - 2.
 
         wildlingsAttackPower++;             // Знак одичалых на карте. Сила одичалых увеличивается на 2.
-        if (wildlingsAttackPower >= 12)     // Если значение силы одичалых достигло 12 разыгрывается событие аналогичное карте "Нашесткие одичалых".
-        {
-            III_WildlingsAttack();
-        }
+        IsWildingsAttack();                 // Метод проверяет началось ли нашествие Одичалых.
     }
 
     public void II_WinterIsComing()         // Зима близко.
@@ -115,10 +119,7 @@ public class WesterosCardReference : MonoBehaviour
         // Количество карт этого типа в колоде II - 1.
 
         wildlingsAttackPower++;             // Знак одичалых на карте. Сила одичалых увеличивается на 2.
-        if (wildlingsAttackPower >= 12)     // Если значение силы одичалых достигло 12 разыгрывается событие аналогичное карте "Нашесткие одичалых".
-        {
-            III_WildlingsAttack();
-        }
+        IsWildingsAttack();                 // Метод проверяет началось ли нашествие Одичалых.
     }
 
     public void II_GameOfThrones()          // Игра престолов.
@@ -165,10 +166,7 @@ public class WesterosCardReference : MonoBehaviour
         // Количество карт этого типа в колоде II - 2.
 
         wildlingsAttackPower++;             // Знак одичалых на карте. Сила одичалых увеличивается на 2.
-        if (wildlingsAttackPower >= 12)     // Если значение силы одичалых достигло 12 разыгрывается событие аналогичное карте "Нашесткие одичалых".
-        {
-            III_WildlingsAttack();
-        }
+        IsWildingsAttack();                 // Метод проверяет началось ли нашествие Одичалых.
     }
 
     public void III_WildlingsAttack()       // Нашествие одичалых.
@@ -182,6 +180,17 @@ public class WesterosCardReference : MonoBehaviour
         // "Одичалые наступают на земли Вестероса."
 
         // Количество карт этого типа в колоде III - 3.
+
+        if (nightWatchPower < wildlingsAttackPower)
+        {
+            Debug.Log("Победа Одичалых!");
+            isVictory = false;
+        }
+        if (nightWatchPower >= wildlingsAttackPower)
+        {
+            Debug.Log("Победа Ночного дозора!");
+            isVictory = true;
+        }
     }
 
     public void III_RainsOfAutumm()         // Дожди осени.
@@ -196,10 +205,7 @@ public class WesterosCardReference : MonoBehaviour
         // Количество карт этого типа в колоде III - 1.
 
         wildlingsAttackPower++;             // Знак одичалых на карте. Сила одичалых увеличивается на 2.
-        if (wildlingsAttackPower >= 12)     // Если значение силы одичалых достигло 12 разыгрывается событие аналогичное карте "Нашесткие одичалых".
-        {
-            III_WildlingsAttack();
-        }
+        IsWildingsAttack();                 // Метод проверяет началось ли нашествие Одичалых.
     }
 
     public void III_StormOfSwords()         // Буря мечей.
@@ -214,10 +220,7 @@ public class WesterosCardReference : MonoBehaviour
         // Количество карт этого типа в колоде III - 1.
 
         wildlingsAttackPower++;             // Знак одичалых на карте. Сила одичалых увеличивается на 2.
-        if (wildlingsAttackPower >= 12)     // Если значение силы одичалых достигло 12 разыгрывается событие аналогичное карте "Нашесткие одичалых".
-        {
-            III_WildlingsAttack();
-        }
+        IsWildingsAttack();                 // Метод проверяет началось ли нашествие Одичалых.
     }
 
     public void III_SeaOfStorms()           // Море штормов.
@@ -232,10 +235,7 @@ public class WesterosCardReference : MonoBehaviour
         // Количество карт этого типа в колоде III - 1.
 
         wildlingsAttackPower++;             // Знак одичалых на карте. Сила одичалых увеличивается на 2.
-        if (wildlingsAttackPower >= 12)     // Если значение силы одичалых достигло 12 разыгрывается событие аналогичное карте "Нашесткие одичалых".
-        {
-            III_WildlingsAttack();
-        }
+        IsWildingsAttack();                 // Метод проверяет началось ли нашествие Одичалых.
     }
 
     public void III_FeastOfCrows()          // Пир для воронов.
@@ -250,10 +250,7 @@ public class WesterosCardReference : MonoBehaviour
         // Количество карт этого типа в колоде III - 1.
 
         wildlingsAttackPower++;             // Знак одичалых на карте. Сила одичалых увеличивается на 2.
-        if (wildlingsAttackPower >= 12)     // Если значение силы одичалых достигло 12 разыгрывается событие аналогичное карте "Нашесткие одичалых".
-        {
-            III_WildlingsAttack();
-        }
+        IsWildingsAttack();                 // Метод проверяет началось ли нашествие Одичалых.
     }
 
     public void III_WebOfLies()             // Паутина лжи.
@@ -268,10 +265,7 @@ public class WesterosCardReference : MonoBehaviour
         // Количество карт этого типа в колоде III - 1.
 
         wildlingsAttackPower++;             // Знак одичалых на карте. Сила одичалых увеличивается на 2.
-        if (wildlingsAttackPower >= 12)     // Если значение силы одичалых достигло 12 разыгрывается событие аналогичное карте "Нашесткие одичалых".
-        {
-            III_WildlingsAttack();
-        }
+        IsWildingsAttack();                 // Метод проверяет началось ли нашествие Одичалых.
     }
 
     public void III_PutToTheSword()         // Преданы мечу.
@@ -290,5 +284,40 @@ public class WesterosCardReference : MonoBehaviour
         // в) ограничений нет.
 
         // Количество карт этого типа в колоде III - 2.
+    }
+
+    /// <summary>
+    /// Метод проверяет началось ли нашествие одичалых.
+    /// </summary>
+    public void IsWildingsAttack()
+    {
+        if (wildlingsAttackPower >= 12)     // Если значение силы одичалых достигло 12, то разыгрывается событие аналогичное карте "Нашесткие одичалых".
+        {
+            III_WildlingsAttack();
+        }
+    }
+    /// <summary>
+    /// Метод определяет суммарную мощь армии Ночного дозора на основе поддержки Великих Домов.
+    /// </summary>
+    public void NightWatchPower()
+    {
+        // Для теста сила подмоги определяется случайным образом.
+        int[] supportHousePower = { Random.Range(0, 5) };
+        // Сила армии Ночного дозора.
+        int nightWatchPower = supportHousePower.Sum();
+
+        // Нахождение минимального и максимального значения
+        int min = supportHousePower[0];
+        int max = supportHousePower[0];
+
+        //
+        for (int i = 1; i < supportHousePower.Length; i++)
+        {
+            if (supportHousePower[i] < min)
+                min = supportHousePower[i];
+
+            if (supportHousePower[i] > max)
+                max = supportHousePower[i];
+        }
     }
 }
