@@ -27,6 +27,7 @@ public class Unit : MonoBehaviour
     public bool isDraged;                                   // Флаг определяет перетаскивается ли юнит игроком.
     public int power;                                       // Сила юнита.
     private Vector3 startPoint;                             // Точка начала перемещения юнита.
+    public bool isRetreated;
 
     public GameObject greenCirclePrefab;                    // ChatGPT. Индикация юнита при перемещении. Префаб зелёного круга, если перемещение доступно.
     public GameObject redCirclePrefab;                      // ChatGPT. Индикация юнита при перемещении. Префаб красного круга, если перемещение доступно.
@@ -54,7 +55,46 @@ public class Unit : MonoBehaviour
     {
         if (Land.CurrentLand != null)                       // Проверяем, выбрана ли новая земля
         {
-            if(house == Land.CurrentLand.house)
+            if (isRetreated)
+            {
+                if (Land.RetreatedLand == null) 
+                {
+                    if (FromLand.CheckBorderLand(Land.CurrentLand))
+                    {
+                        FromLand.RemoveUnit(this);          // Убираем юнит с текущей земли
+                        isCanMove = false;                  // Запрещаем дальнейшее движение
+                        isDraged = false;                         // Прекращаем перетаскивание
+                        isRetreated = false;                     // 
+                        FromLand = Land.CurrentLand;             // Обновляем текущую землю юнита
+                        FromLand.AddUnit(this);                     // Добавляем юнит на новую землю
+                        Land.RetreatedLand = Land.CurrentLand;
+                    }
+                    else
+                    {
+                        StartCoroutine(ReturnStartPoint());         // Если перемещение невозможно, возвращаем юнит в начальную точку
+                    }
+                    return;
+                }
+                else
+                {
+                    if(Land.RetreatedLand == Land.CurrentLand)
+                    {
+                        FromLand.RemoveUnit(this);          // Убираем юнит с текущей земли
+                        isCanMove = false;                  // Запрещаем дальнейшее движение
+                        isDraged = false;                         // Прекращаем перетаскивание
+                        isRetreated = false;                     // 
+                        FromLand = Land.CurrentLand;                // Обновляем текущую землю юнита
+                        FromLand.AddUnit(this);                     // Добавляем юнит на новую землю
+                    }
+                    else
+                    {
+                        StartCoroutine(ReturnStartPoint());         // Если перемещение невозможно, возвращаем юнит в начальную точку
+                    }
+                    return;
+                }
+            }
+
+            if (house == Land.CurrentLand.house)
             {
                 bool isReturn = true;
                 if (FromLand.CheckBorderLand(Land.CurrentLand) | FromLand.CheckBorderWater(Land.CurrentLand)) // Проверяем, граничит ли новая земля с текущей
@@ -81,6 +121,7 @@ public class Unit : MonoBehaviour
             }
             else
             {
+
                 FromLand.RemoveUnit(this);          // Убираем юнит с текущей земли
                 isCanMove = false;                  // Запрещаем дальнейшее движение
                 isDraged = false;                   // Прекращаем перетаскивание

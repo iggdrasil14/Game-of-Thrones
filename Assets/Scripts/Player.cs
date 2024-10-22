@@ -49,6 +49,11 @@ public class Battle
         if(powerAttackers > powerDefenders)
         {
             Debug.Log("Атакующие победили!");
+            for(int i = 0; i < unitsDefenders.Count; i++)
+            {
+                unitsDefenders[i].isCanMove = true;
+                unitsDefenders[i].isRetreated = true;
+            }
         }
         if(powerAttackers < powerDefenders)
         {
@@ -61,6 +66,23 @@ public class Battle
         if(powerAttackers == powerDefenders)
         {
             Debug.Log("Ничья");
+            if (Random.value >= 0.5f)
+            {
+                Debug.Log("Атакующие победили!");
+                for (int i = 0; i < unitsDefenders.Count; i++)
+                {
+                    unitsDefenders[i].isCanMove = true;
+                    unitsDefenders[i].isRetreated = true;
+                }
+            }
+            else
+            {
+                Debug.Log("Защитники победили!");
+                for (int i = 0; i < unitsAttackers.Count; i++)
+                {
+                    unitsAttackers[i].Retreat();
+                }
+            }
         }
     }
 }
@@ -92,6 +114,4 @@ public class Player
             army.Add(newArmy);
         }
     }
-
-
 }

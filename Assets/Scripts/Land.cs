@@ -5,6 +5,7 @@ using UnityEngine;
 public class Land : MonoBehaviour
 {
     public static Land CurrentLand {  get; private set; }
+    public static Land RetreatedLand { get; set; }
     public List<Land> borderLand;
     public List<Land> borderWater;
     public List<Unit> unitsOnLand;
@@ -92,7 +93,6 @@ public class Land : MonoBehaviour
     {
         unitsOnLand.Remove(unit);
     }
-
 
     private void OnMouseDown()
     {
