@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.7760155, y: 6.5035534, z: 0}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 074f316b3a3d0c94b95517e5c0a6d6e8, type: 3}
-  m_Color: {r: 0.46226418, g: 0.46226418, b: 0.46226418, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 5d97ff06344c1c541ab8ae790986786d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -103,6 +103,7 @@ MonoBehaviour:
   isCanMove: 0
   isDraged: 0
   power: 2
+  isRetreated: 0
   greenCirclePrefab: {fileID: 2628447816320857187, guid: 253626791f73f5e409158f78d617f616, type: 3}
   redCirclePrefab: {fileID: 4793052471478229085, guid: 7400ee1b072ea5b4094bc3dad62aa4e3, type: 3}
 --- !u!61 &7996131236530490138
@@ -141,7 +142,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.67, y: 5.54}
+    oldSize: {x: 19.2, y: 10.8}
     newSize: {x: 3.67, y: 5.54}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

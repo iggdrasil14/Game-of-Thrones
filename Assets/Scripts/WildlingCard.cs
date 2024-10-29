@@ -10,7 +10,7 @@ public class WildlingCard : MonoBehaviour
     /// <summary>
     /// Метод разыгрывает карту "Сбор на Молоководной" при нашествии одичалых.
     /// </summary>
-    public void MassingOnTheMilkwater()     // Сбор на Молоководной.
+    public void MassingOnTheMilkwater()                     // Сбор на Молоководной.
     {
         // Победа одичалых:
         if (westerosCardReference.isVictory == false) 
@@ -25,7 +25,10 @@ public class WildlingCard : MonoBehaviour
             // Высшая ставка забирает на руку весь сброс своих карт Дома.
         }
     }
-    public void AKingBeyondTheWall()     // Король за стеной.
+    /// <summary>
+    /// Метод разыгрывает карту "Король за стеной" при нашествии одичалых.
+    /// </summary>
+    public void AKingBeyondTheWall()                        // Король за стеной.
     {
         // Победа одичалых:
         if (westerosCardReference.isVictory == false)
@@ -40,7 +43,7 @@ public class WildlingCard : MonoBehaviour
             // Высшая ставка продвигается на первое деление любого трека влияния и забирает соответствующий жетон превосходства.
         }
     }
-    public void MammothRiders()     // Наездники на мамонтах.
+    public void MammothRiders()                             // Наездники на мамонтах.
     {
         // Победа одичалых:
         if (westerosCardReference.isVictory == false)
@@ -55,7 +58,7 @@ public class WildlingCard : MonoBehaviour
             // Высшая ставка может выбрать из своего сброса 1 карту Дома и забрать её на руку.
         }
     }
-    public void CrowKillers()     // Убийца воронов.
+    public void CrowKillers()                               // Убийца воронов.
     {
         // Победа одичалых:
         if (westerosCardReference.isVictory == false)
@@ -70,7 +73,7 @@ public class WildlingCard : MonoBehaviour
             // Высшая ставка может тут же заменить до 2 любых своих пеших воинов доступными рыцарями.
         }
     }
-    public void TheHordeDescends()     // Наступление орды.
+    public void TheHordeDescends()                          // Наступление орды.
     {
         // Победа одичалых:
         if (westerosCardReference.isVictory == false)
@@ -85,7 +88,7 @@ public class WildlingCard : MonoBehaviour
             // Высшая ставка может собрать войска по обычным правилам сбора в любом подвластном замке или крепости.
         }
     }
-    public void SkinchangerScout()     // Разветчик оборотень.
+    public void SkinchangerScout()                          // Разветчик оборотень.
     {
         // Победа одичалых:
         if (westerosCardReference.isVictory == false)
@@ -100,7 +103,7 @@ public class WildlingCard : MonoBehaviour
             // Высшая ставка может собрать войска по обычным правилам сбора в любом подвластном замке или крепости.
         }
     }
-    public void RattleshirtsRaiders()     // Разбойники Гремучей Рубашки.
+    public void RattleshirtsRaiders()                       // Разбойники Гремучей Рубашки.
     {
         // Победа одичалых:
         if (westerosCardReference.isVictory == false)
@@ -115,7 +118,7 @@ public class WildlingCard : MonoBehaviour
             // Высшая ставка продвигается на 1 деление вперед по треку снабжения (не выше 6).
         }
     }
-    public void SilenceAtTheWall()     // Тишина у стены.
+    public void SilenceAtTheWall()                          // Тишина у стены.
     {
         // Победа одичалых:
         if (westerosCardReference.isVictory == false)
@@ -130,7 +133,7 @@ public class WildlingCard : MonoBehaviour
             // Высшая ставка не награждается.
         }
     }
-    public void PreemptiveRaid()     // Передовой отряд.
+    public void PreemptiveRaid()                            // Передовой отряд.
     {
         // Победа одичалых:
         if (westerosCardReference.isVictory == false)
