@@ -1,7 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
+
+
 public class Land : MonoBehaviour
 {
     public static Land CurrentLand {  get; private set; }
@@ -13,7 +16,17 @@ public class Land : MonoBehaviour
     public bool isSupply;
     public bool isCastle;
     public bool isHasToken;
-    public House house;     
+    public House house;
+
+    // Подсветка земли
+    [Space(25)]
+    [Header("Подсветка")]
+    [Tooltip("фволаолфраолф")] public GameObject outlineMovement;
+    //++++++
+    public void ResetOutline()
+    {
+        if(outlineMovement != null) { outlineMovement.SetActive(false); }
+    }
 
     private void Awake()
     {
@@ -108,13 +121,13 @@ public class Land : MonoBehaviour
 
     public void OnMouseEnter()
     {
-        Debug.Log("Enter");
+        //Debug.Log("Enter");
         CurrentLand = this;
     }
 
     public void OnMouseExit()
     {
-        Debug.Log("Exit");
+        //Debug.Log("Exit");
         CurrentLand = null;
     }
 }

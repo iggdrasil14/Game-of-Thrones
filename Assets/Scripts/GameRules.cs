@@ -48,4 +48,31 @@ public static class Tokens
             }
         }
     }
+    public static void OutlineMovementLand(Land land)
+    {
+        for (int i = 0; i < land.borderLand.Count; i++) // для земли
+        {
+            if(land.borderLand[i].outlineMovement == null) 
+            {
+                continue;
+            }
+            land.borderLand[i].outlineMovement.SetActive(true);
+        }
+
+        for(int i = 0; i < land.borderWater.Count; i++)
+        {
+            if (land.borderWater[i].unitsOnLand.Count > 0)
+            {
+                foreach (var item in land.borderWater[i].borderLand) //item - land
+                {
+                    if (item.outlineMovement == null)
+                    {
+                        continue;
+                    }
+                    item.outlineMovement.SetActive(true);
+                }
+            }
+        }
+        // if (borderWater[i].CheckBorderLand(land) & borderWater[i].unitsOnLand.Count > 0)
+    }
 }

@@ -12,8 +12,11 @@ public class GameUI : MonoBehaviour
     }
     public void Attack()
     {
-
         var lands = FindObjectsOfType<Land>();
+        foreach (var land in lands) 
+        {
+            land.ResetOutline();
+        }
         for (int i = 0; i < lands.Length; i++) 
         {
             if (lands[i].IsBattle()) 

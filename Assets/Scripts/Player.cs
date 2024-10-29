@@ -103,15 +103,4 @@ public class Player
         }
         lands.Add(land);
     }
-
-    public void AddArmy() 
-    {
-        if (army.Count < armyCount)
-        {
-            int[] armyPower = GameRules.ArmyPower(supply);
-            Army newArmy = new Army();
-            newArmy.armyPower = armyPower[army.Count - 1];
-            army.Add(newArmy);
-        }
-    }
 }
