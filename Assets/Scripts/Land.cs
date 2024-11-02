@@ -22,7 +22,7 @@ public class Land : MonoBehaviour
     [Space(25)]
     [Header("ֿמהסגועךא")]
     [Tooltip("פגמכאמכפנאמכפ")] public GameObject outlineMovement;
-    //++++++
+    public GameObject outlineHouseBorder;
     public void ResetOutline()
     {
         if(outlineMovement != null) { outlineMovement.SetActive(false); }

@@ -53,7 +53,7 @@ namespace EPOOutline
 
         private static List<Outlinable> temporaryOutlinables = new List<Outlinable>(); 
 
-        private OutlineParameters parameters = new OutlineParameters();
+        public OutlineParameters parameters = new OutlineParameters();
 
 #if UNITY_EDITOR
         private OutlineParameters editorPreviewParameters = new OutlineParameters();
