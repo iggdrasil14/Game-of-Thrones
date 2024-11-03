@@ -54,6 +54,7 @@ public class Battle
                 unitsDefenders[i].isCanMove = true;
                 unitsDefenders[i].isRetreated = true;
             }
+            land.Repaint(PlayerInput.Instance.GetColor(houseAttackers));
         }
         if(powerAttackers < powerDefenders)
         {

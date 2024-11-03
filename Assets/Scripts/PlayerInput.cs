@@ -13,8 +13,19 @@ public class PlayerInput : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        FillHousesColor();
     }
-
+    public Color GetColor(House house)
+    {
+        for (int i = 0; i < houseColor.Length; i++)
+        {
+            if (houseColor[i].house == house)
+            {
+                return houseColor[i].color;
+            }
+        }
+        return Color.magenta;
+    }
     public void FillHousesColor()
     {
         var lands = FindObjectsOfType<Land>();
@@ -24,7 +35,7 @@ public class PlayerInput : MonoBehaviour
             {
                 if (houseColor[i].house == land.house & land.outlineHouseBorder != null)
                 {
-                    //land.outlineHouseBorder.GetComponent<Outliner>().parameters
+                    land.outlineHouseBorder.GetComponent<Outlinable>().outlineParameters.Color = houseColor[i].color;
                 }
             }
         }

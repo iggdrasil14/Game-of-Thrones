@@ -1,3 +1,4 @@
+using EPOOutline;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -27,7 +28,12 @@ public class Land : MonoBehaviour
     {
         if(outlineMovement != null) { outlineMovement.SetActive(false); }
     }
+    public void Repaint(Color color)
+    {
+        outlineHouseBorder.GetComponent<Outlinable>().outlineParameters.Color = color;
+    }
 
+    // Все что ниже - логика игровая:
     private void Awake()
     {
         for (int i = 0; i < unitsOnLand.Count; i++)

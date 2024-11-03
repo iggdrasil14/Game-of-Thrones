@@ -65,7 +65,7 @@ public static class Tokens
             {
                 foreach (var item in land.borderWater[i].borderLand) //item - land
                 {
-                    if (item.outlineMovement == null)
+                    if (item.outlineMovement == null || item == land)
                     {
                         continue;
                     }

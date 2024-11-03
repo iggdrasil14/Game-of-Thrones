@@ -158,7 +158,7 @@ namespace EPOOutline
 
 #pragma warning disable CS0649
         [SerializeField]
-        private OutlineProperties outlineParameters = new OutlineProperties();
+        public OutlineProperties outlineParameters = new OutlineProperties();
 
         [SerializeField]
         private OutlineProperties backParameters = new OutlineProperties();

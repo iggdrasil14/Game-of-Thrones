@@ -10,7 +10,7 @@ public class GameUI : MonoBehaviour
     {
         Instance = this;
     }
-    public void Attack()
+    public void EndTurn()
     {
         var lands = FindObjectsOfType<Land>();
         foreach (var land in lands) 

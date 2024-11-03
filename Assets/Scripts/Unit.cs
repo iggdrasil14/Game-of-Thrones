@@ -121,7 +121,10 @@ public class Unit : MonoBehaviour
             }
             else
             {
-
+                if(Land.CurrentLand.house == House.Neutral)
+                {
+                    Land.CurrentLand.Repaint(PlayerInput.Instance.GetColor(house));
+                }
                 FromLand.RemoveUnit(this);          // Убираем юнит с текущей земли
                 isCanMove = false;                  // Запрещаем дальнейшее движение
                 isDraged = false;                   // Прекращаем перетаскивание
