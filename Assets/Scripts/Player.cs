@@ -33,7 +33,20 @@ public class Battle
     public Land land;
     public House houseAttackers;
     public House houseDefenders;
+    public HouseCard attackersCard;
+    public HouseCard defendersCard;
 
+    public void AddCard(HouseCard card)
+    {
+        if(card.house == houseAttackers)
+        {
+            attackersCard = card;
+        }
+        if (card.house == houseDefenders) 
+        {
+            defendersCard = card;
+        }
+    }
     public void BattleExecute()
     {
         int powerAttackers = 0;
@@ -42,10 +55,14 @@ public class Battle
         {
             powerAttackers += unitsAttackers[i].power;
         }
+        powerAttackers += attackersCard.power;
+
         for(int i = 0; i < unitsDefenders.Count; i++)
         {
             powerDefenders += unitsDefenders[i].power;
         }
+        powerDefenders += defendersCard.power;
+
         if(powerAttackers > powerDefenders)
         {
             Debug.Log("Атакующие победили!");

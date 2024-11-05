@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class HouseCard : MonoBehaviour
 {
+    public House house;
+    public int power;
+    public void Apply(Battle battle)
+    {
+        battle.AddCard(this);
+    }
     public virtual void HeroesCard()
     {
         string cardDiscription;             // Описание карты.

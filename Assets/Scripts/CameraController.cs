@@ -2,123 +2,64 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    // Скорость перемещения камеры по горизонтали и вертикали
-    public float moveSpeed = 10f;
-    // Скорость масштабирования камеры
-    public float zoomSpeed = 2f;
-    // Максимально и минимально допустимый уровень масштаба камеры
-    public float minZoom = 5f;
-    public float maxZoom = 20f;
+    
+    public float moveSpeed = 10f;               // Скорость перемещения камеры по горизонтали и вертикали.
+    public float zoomSpeed = 2f;                //Скорость масштабирования камеры.
+    public float minZoom = 5f;                  // Минимальный уровень масштаба камеры.
+    public float maxZoom = 20f;                 // Максимальный уровень масштаба камеры.
+    public Vector2 worldMinBounds;              // Минимальные границы мира по осям X и Y.
+    public Vector2 worldMaxBounds;              // Максимальные границы мира по осям X и Y.
 
-    // Границы мира в виде значений по осям
-    public Vector2 worldMinBounds;
-    public Vector2 worldMaxBounds;
-
-    // Точки, определяющие границы мира (можно задать в редакторе)
-    public Transform minBoundsPoint;
-    public Transform maxBoundsPoint;
-
-    // Используемые клавиши для управления камерой
-    public KeyCode moveLeftKey = KeyCode.A;
-    public KeyCode moveRightKey = KeyCode.D;
-    public KeyCode moveUpKey = KeyCode.W;
-    public KeyCode moveDownKey = KeyCode.S;
-    public KeyCode zoomInKey = KeyCode.Equals; // Клавиша "+"
-    public KeyCode zoomOutKey = KeyCode.Minus; // Клавиша "-"
-
-    void Start()
+    void LateUpdate()
     {
-        // Устанавливаем границы мира на основе координат точек
-        if (minBoundsPoint != null && maxBoundsPoint != null)
-        {
-            worldMinBounds = minBoundsPoint.position;
-            worldMaxBounds = maxBoundsPoint.position;
-        }
-    }
-
-    void Update()
-    {
-        // Обрабатываем перемещение с помощью клавиш A, D, W, S
-        HandleKeyboardMovement();
-
-        // Обрабатываем увеличение и уменьшение масштаба с помощью клавиатуры и колесика мыши
+        HandleMovement();
         HandleZoom();
-
-        // Ограничиваем позицию камеры границами мира
         ClampCameraPosition();
     }
 
-    // Метод для обработки движения камеры с помощью клавиш A, D, W, S
-    void HandleKeyboardMovement()
+    /// <summary>
+    /// Обрабатывает перемещение камеры по горизонтали и вертикали с помощью клавиш.
+    /// </summary>
+    void HandleMovement()
     {
-        Vector3 moveDirection = Vector3.zero;
+        // Получаем направление движения на основе ввода пользователя
+        Vector3 moveDirection = new Vector3(
+            Input.GetAxisRaw("Horizontal"),     // Горизонтальное перемещение (A/D или стрелки)
+            Input.GetAxisRaw("Vertical"),       // Вертикальное перемещение (W/S или стрелки)
+            0
+        ).normalized;
 
-        if (Input.GetKey(moveLeftKey))
-        {
-            moveDirection.x = -1;
-        }
-        if (Input.GetKey(moveRightKey))
-        {
-            moveDirection.x += 1;
-        }
-        if (Input.GetKey(moveUpKey))
-        {
-            moveDirection.y += 1;
-        }
-        if (Input.GetKey(moveDownKey))
-        {
-            moveDirection.y -= 1;
-        }
-
-        //moveDirection.Normalize();// ось Х - 15 .... 0.15 -- 1
+        // Обновляем позицию камеры с учетом скорости и времени
         transform.position += moveDirection * moveSpeed * Time.deltaTime;
     }
 
-    // Метод для обработки изменения масштаба камеры с помощью колесика мыши и клавиш "+" и "-"
+    /// <summary>
+    /// Обрабатывает изменение масштаба камеры с помощью колесика мыши и клавиш "+" и "-".
+    /// </summary>
     void HandleZoom()
     {
-        float scroll = Input.GetAxis("Mouse ScrollWheel");
+        // Получаем изменение масштаба на основе ввода пользователя
+        float zoomChange = Input.GetAxis("Mouse ScrollWheel") * zoomSpeed;
+        zoomChange += (Input.GetKey(KeyCode.Equals) ? -zoomSpeed : 0) * Time.deltaTime;
+        zoomChange += (Input.GetKey(KeyCode.Minus) ? zoomSpeed : 0) * Time.deltaTime;
 
-        if (scroll != 0)
-        {
-            Camera.main.orthographicSize -= scroll * zoomSpeed;
-        }
-
-        if (Input.GetKey(zoomInKey))
-        {
-            Camera.main.orthographicSize -= zoomSpeed * Time.deltaTime;
-        }
-        if (Input.GetKey(zoomOutKey))
-        {
-            Camera.main.orthographicSize += zoomSpeed * Time.deltaTime;
-        }
-
-        // Ограничиваем масштаб в заданных пределах
-        Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize, minZoom, maxZoom);
+        // Ограничиваем уровень масштаба в заданных пределах
+        Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize + zoomChange, minZoom, maxZoom);
     }
 
-    // Метод для ограничения позиции камеры границами мира
+    /// <summary>
+    /// Ограничивает позицию камеры в пределах заданных границ мира.
+    /// </summary>
     void ClampCameraPosition()
     {
-        Vector3 clampedPosition = transform.position;
-
         float cameraHeight = Camera.main.orthographicSize;
         float cameraWidth = cameraHeight * Camera.main.aspect;
 
+        // Ограничиваем положение камеры, чтобы она не выходила за границы мира
+        Vector3 clampedPosition = transform.position;
         clampedPosition.x = Mathf.Clamp(clampedPosition.x, worldMinBounds.x + cameraWidth, worldMaxBounds.x - cameraWidth);
-        clampedPosition.y = Mathf.Clamp(clampedPosition.y, worldMinBounds.y, worldMaxBounds.y );
+        clampedPosition.y = Mathf.Clamp(clampedPosition.y, worldMinBounds.y + cameraHeight, worldMaxBounds.y - cameraHeight);
 
         transform.position = clampedPosition;
     }
 }
-
-/*
-Описание:
-1. Скрипт прикрепляется к камере, чтобы управлять её передвижением и масштабированием.
-2. "moveSpeed" и "zoomSpeed" контролируют скорость передвижения и изменения масштаба соответственно.
-3. "worldMinBounds" и "worldMaxBounds" определяют границы мира для ограничения передвижения камеры.
-4. Границы мира могут быть заданы через точки "minBoundsPoint" и "maxBoundsPoint", которые определяют зону допустимого перемещения камеры.
-5. Управление передвижением камеры осуществляется с помощью клавиш A, D, W, S или путём перемещения мыши при зажатой левой кнопке.
-6. Масштаб камеры регулируется с помощью колесика мыши или клавиш "+" и "-".
-7. Камера автоматически ограничивает свою позицию в пределах границ мира с учётом текущего масштаба.
-*/

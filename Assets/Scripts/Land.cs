@@ -54,11 +54,10 @@ public class Land : MonoBehaviour
         return false;
     }
 
-    public void StartBattle()
+    public void SetupBattle(Battle battle)
     {
-        Battle battle = new Battle();
         battle.land = this;
-        for (int i = 0; i < unitsOnLand.Count; i++) 
+        for (int i = 0; i < unitsOnLand.Count; i++)
         {
             if (unitsOnLand[i].house != house)
             {
@@ -71,7 +70,6 @@ public class Land : MonoBehaviour
                 battle.houseDefenders = unitsOnLand[i].house;
             }
         }
-        battle.BattleExecute();
     }
     public void CompleteTurn()
     {
