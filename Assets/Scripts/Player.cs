@@ -49,21 +49,27 @@ public class Battle
     }
     public void BattleExecute()
     {
+        int powerAttackersNoneCard = 0;
+        int powerDefendersNoneCard = 0;
         int powerAttackers = 0;
         int powerDefenders = 0;
-        for(int i = 0;i < unitsAttackers.Count; i++)
+        for (int i = 0;i < unitsAttackers.Count; i++)
         {
             powerAttackers += unitsAttackers[i].power;
         }
+        powerAttackersNoneCard = powerAttackers;
         powerAttackers += attackersCard.power;
 
         for(int i = 0; i < unitsDefenders.Count; i++)
         {
             powerDefenders += unitsDefenders[i].power;
         }
-        powerDefenders += defendersCard.power;
+        powerDefendersNoneCard = powerDefenders;
+        //powerDefenders += defendersCard.power;
+        Debug.Log($"Сила атакующей армии {powerAttackersNoneCard} и сила карты {attackersCard.power}.");
+        Debug.Log($"Сила защищающейся армии {powerDefendersNoneCard} и сила карты {0}.");
 
-        if(powerAttackers > powerDefenders)
+        if (powerAttackers > powerDefenders)
         {
             Debug.Log("Атакующие победили!");
             for(int i = 0; i < unitsDefenders.Count; i++)
