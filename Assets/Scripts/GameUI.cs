@@ -6,8 +6,10 @@ using UnityEngine;
 public class GameUI : MonoBehaviour
 {
     public event Action<HouseCard> ClickHouseCard;
+    public event Action ClickValerySword;
     public static GameUI Instance { get; private set; }
     public GameObject buttonDone;
+    public GameObject panelValerySword;
 
     private void Awake()
     {
@@ -22,6 +24,11 @@ public class GameUI : MonoBehaviour
     public void OnClickHouseCard(HouseCard card)
     {
         ClickHouseCard?.Invoke(card);
+    }
+
+    public void OnClickValerySword()
+    {
+        ClickValerySword?.Invoke();
     }
 
     private IEnumerator LandBattle()
@@ -46,8 +53,13 @@ public class GameUI : MonoBehaviour
         {
             ClickHouseCard += battle.AddCard;
             yield return new WaitWhile(() => BattlePredicate(battle));
-            battle.BattleExecute();
             ClickHouseCard -= battle.AddCard;
+
+            panelValerySword.SetActive(true);
+            yield return null;
+
+            yield return new WaitWhile(() => SwordValeryPredicate());
+            battle.BattleExecute();
         }
         else 
         {
@@ -60,5 +72,10 @@ public class GameUI : MonoBehaviour
     {
         //return battle.attackersCard == null & battle.defendersCard == null;
         return battle.attackersCard == null;
+    }
+
+    private bool SwordValeryPredicate()
+    {
+        return panelValerySword.activeInHierarchy;
     }
 }

@@ -35,6 +35,8 @@ public class Battle
     public House houseDefenders;
     public HouseCard attackersCard;
     public HouseCard defendersCard;
+    public bool atteckersUseValerySword;
+    public bool defendersUseValerySword;
 
     public void AddCard(HouseCard card)
     {
@@ -47,6 +49,12 @@ public class Battle
             defendersCard = card;
         }
     }
+
+    public void AddValerySword()
+    {
+        atteckersUseValerySword = true;
+    }
+
     public void BattleExecute()
     {
         int powerAttackersNoneCard = 0;
@@ -59,6 +67,10 @@ public class Battle
         }
         powerAttackersNoneCard = powerAttackers;
         powerAttackers += attackersCard.power;
+        if(atteckersUseValerySword == true)
+        {
+            powerAttackers += 1;
+        }
 
         for(int i = 0; i < unitsDefenders.Count; i++)
         {
@@ -68,6 +80,14 @@ public class Battle
         //powerDefenders += defendersCard.power;
         Debug.Log($"Сила атакующей армии {powerAttackersNoneCard} и сила карты {attackersCard.power}.");
         Debug.Log($"Сила защищающейся армии {powerDefendersNoneCard} и сила карты {0}.");
+        if(atteckersUseValerySword == true)
+        {
+            Debug.Log($"Сила Валирийского меча атакующих +1.");
+        }
+        if (defendersUseValerySword == true)
+        {
+            Debug.Log($"Сила Валирийского меча защищающихся +1.");
+        }
 
         if (powerAttackers > powerDefenders)
         {
