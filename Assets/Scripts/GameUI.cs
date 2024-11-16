@@ -58,7 +58,10 @@ public class GameUI : MonoBehaviour
             panelValerySword.SetActive(true);
             yield return null;
 
+            ClickValerySword += battle.AddValerySword;
             yield return new WaitWhile(() => SwordValeryPredicate());
+            ClickValerySword -= battle.AddValerySword;
+
             battle.BattleExecute();
         }
         else 

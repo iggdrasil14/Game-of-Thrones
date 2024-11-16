@@ -143,6 +143,15 @@ public class Unit : MonoBehaviour
     {
         if (isCanMove)
         {
+            var units = FindObjectsOfType<Unit>();
+            for (int i = 0; i < units.Length; i++) 
+            {
+                if (units[i] != this)
+                {
+                    units[i].GetComponent<Collider2D>().enabled = false;
+                }
+            }
+
             collider2D.enabled = false;                     // Отключаем коллайдер, чтобы избежать ложных столкновений во время перетаскивания
             isDraged = true;                                // Устанавливаем флаг перетаскивания
             startPoint = transform.position;                // Сохраняем начальную позицию юнита
@@ -160,6 +169,15 @@ public class Unit : MonoBehaviour
     {
         if (isCanMove)
         {
+            var units = FindObjectsOfType<Unit>();
+            for (int i = 0; i < units.Length; i++)
+            {
+                if (units[i] != this)
+                {
+                    units[i].GetComponent<Collider2D>().enabled = true;
+                }
+            }
+
             collider2D.enabled = true;                      // Включаем коллайдер снова
             isDraged = false;                               // Прекращаем перетаскивание
             MoveComplete();                                 // Завершаем перемещение юнита

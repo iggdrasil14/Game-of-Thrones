@@ -5,7 +5,25 @@ using UnityEngine;
 public class WildlingCard : MonoBehaviour
 {
     public WesterosCardReference westerosCardReference;
+    public GameObject token;
+    public GameObject[] points;
+    public int pointsIndex;
+    public float speed;
+    public void Start()
+    {
+        token.transform.position = points[1].transform.position;
+        pointsIndex = 1;
+    }
 
+    public void Update()
+    {
+        token.transform.position = Vector3.MoveTowards(token.transform.position, points[pointsIndex].transform.position, speed * Time.deltaTime);
+    }
+
+    public void GetCard()
+    {
+        print("Карта взята");
+    }
     //public bool isVictory;
     /// <summary>
     /// Метод разыгрывает карту "Сбор на Молоководной" при нашествии одичалых.
