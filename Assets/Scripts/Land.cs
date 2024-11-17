@@ -2,9 +2,7 @@ using EPOOutline;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 
 public class Land : MonoBehaviour
@@ -19,7 +17,9 @@ public class Land : MonoBehaviour
     public bool isWater;
     public bool isSupply;
     public bool isCastle;
+    public bool isStronghold;
     public bool isHasToken;
+    public bool isHasCrown;
     public House house;
 
     // Подсветка земли
