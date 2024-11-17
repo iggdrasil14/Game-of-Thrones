@@ -2,30 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Army
-{
-    public List<Unit> units = new();
-    public Land land;
-    public int armyPower;
-    public void AddUnit(Unit unit) 
-    {
-        if(units.Count < armyPower)
-        {
-            units.Add(unit);
-        }
-    }
-
-    public int AttackPower() 
-    {
-        int power = 0;
-        for (int i = 0; i < units.Count; i++) 
-        {
-            power += units[i].power;
-        }
-        return power;
-    }
-
-}
 public class Battle
 {
     public List <Unit> unitsAttackers = new();
@@ -133,10 +109,23 @@ public class Battle
 public class Player
 {
     public List<Land> lands = new();
-    public List<Army> army = new();
     public string namePlayer;
+    public House house;
     public int supply;
     public int armyCount;
+    public static List<Player> Players = new List<Player>();
+
+    public void Setup()
+    {
+        Players.Add(this);
+        for (int i = 0; i < Land.Lands.Count; i++) 
+        {
+            if(house == Land.Lands[i].house && !Land.Lands[i].isWater) 
+            {
+                AddLand(Land.Lands[i]);
+            }
+        }
+    }
 
     public void AddLand(Land land)
     {

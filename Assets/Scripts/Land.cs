@@ -4,16 +4,19 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 
 public class Land : MonoBehaviour
 {
+    public static List<Land> Lands = new List<Land>();
     public static Land CurrentLand {  get; private set; }
     public static Land RetreatedLand { get; set; }
     public List<Land> borderLand;
     public List<Land> borderWater;
     public List<Unit> unitsOnLand;
     public string name;
+    public bool isWater;
     public bool isSupply;
     public bool isCastle;
     public bool isHasToken;
@@ -36,6 +39,7 @@ public class Land : MonoBehaviour
     // Все что ниже - логика игровая:
     private void Awake()
     {
+        Lands.Add(this);
         for (int i = 0; i < unitsOnLand.Count; i++)
         {
             unitsOnLand[i].FromLand = this;
