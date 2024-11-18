@@ -15,11 +15,11 @@ public class Land : MonoBehaviour
     public List<Unit> unitsOnLand;
     public string name;
     public bool isWater;
-    public bool isSupply;
-    public bool isCastle;
-    public bool isStronghold;
+    public bool isHasSupply;                                    // Наличие снабжения.
+    public bool isHasStronghold;                                // Наличие крепости (дает 2 очка на постройку/улучшение юнитов)
+    public bool isHasCastle;                                    // Наличие замка (дает 1 очко на постройку/улучшение юнита)
+    public bool isHasCrown;                                     // Наличие символа власти.
     public bool isHasToken;
-    public bool isHasCrown;
     public House house;
 
     // Подсветка земли

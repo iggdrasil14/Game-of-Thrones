@@ -27,7 +27,7 @@ public class Player
 
     public void AddLand(Land land)
     {
-        if (land.isSupply)
+        if (land.isHasSupply)
         {
             supply++;
             armyCount = GameRules.ChangeArmyCount(supply);
