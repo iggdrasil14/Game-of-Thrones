@@ -183,11 +183,11 @@ MonoBehaviour:
   - {fileID: 1169214019940311821}
   name: Dornish Marches
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 0
+  isHasCrown: 1
   isHasToken: 0
-  isHasCrown: 0
   house: 3
   outlineMovement: {fileID: 1630551715}
   outlineHouseBorder: {fileID: 63292158}
@@ -233,7 +233,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 965562564604275478fd28f0ae34490e, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.19215687, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -793,7 +793,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -1231,7 +1231,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -1618,11 +1618,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: Searoad Marches
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 1
+  isHasStronghold: 0
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 6
   outlineMovement: {fileID: 888226591}
   outlineHouseBorder: {fileID: 2070874224}
@@ -1668,7 +1668,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 40128c252156e9c41a45bb3ec4647e29, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1729,11 +1729,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: White Harbor Port
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 0
   outlineMovement: {fileID: 2125711579}
   outlineHouseBorder: {fileID: 2009170284}
@@ -1874,7 +1874,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -2191,11 +2191,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: The Eyrie
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
+  isHasSupply: 1
+  isHasStronghold: 0
+  isHasCastle: 1
+  isHasCrown: 1
   isHasToken: 0
-  isHasCrown: 0
   house: 6
   outlineMovement: {fileID: 1622779871}
   outlineHouseBorder: {fileID: 1736005938}
@@ -2241,7 +2241,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f40f04af1e3a98b43854c7eb8164b547, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2440,7 +2440,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -2821,7 +2821,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -5232,11 +5232,11 @@ MonoBehaviour:
   - {fileID: 1696162959}
   name: Graywater Watch
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 1
+  isHasStronghold: 0
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 1
   outlineMovement: {fileID: 2120603681}
   outlineHouseBorder: {fileID: 1572176062}
@@ -5282,7 +5282,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 04b6ad5e80170384e9ceed990aa6dcd1, type: 3}
-  m_Color: {r: 0.4627451, g: 0.4627451, b: 0.4627451, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5625,11 +5625,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: East Summer Sea
   isWater: 1
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 6
   outlineMovement: {fileID: 1170510901}
   outlineHouseBorder: {fileID: 1462834413}
@@ -6492,11 +6492,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: The Twins
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 0
+  isHasCrown: 1
   isHasToken: 0
-  isHasCrown: 0
   house: 6
   outlineMovement: {fileID: 767596083}
   outlineHouseBorder: {fileID: 2042218811}
@@ -6542,7 +6542,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 90e4f904278ddb54aa86053b65c8000f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6602,7 +6602,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -6886,11 +6886,11 @@ MonoBehaviour:
   - {fileID: 315195847}
   name: White Harbor
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 1
   isHasCrown: 0
+  isHasToken: 0
   house: 0
   outlineMovement: {fileID: 1359443462}
   outlineHouseBorder: {fileID: 100684130}
@@ -6936,7 +6936,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e9e112e1935f5904c8035b7ab7bb19b6, type: 3}
-  m_Color: {r: 0.003921569, g: 0.6901961, b: 1, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7136,11 +7136,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: Harrenhal
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 1
+  isHasCrown: 1
   isHasToken: 0
-  isHasCrown: 0
   house: 6
   outlineMovement: {fileID: 429224185}
   outlineHouseBorder: {fileID: 1929451341}
@@ -7186,7 +7186,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fcb77888fb268fc44a5140a14e218713, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7744,7 +7744,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -8185,11 +8185,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: OldtownPort
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 6
   outlineMovement: {fileID: 1269791848}
   outlineHouseBorder: {fileID: 54503972}
@@ -8444,11 +8444,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: Riverrun
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
+  isHasSupply: 1
+  isHasStronghold: 1
+  isHasCastle: 0
+  isHasCrown: 1
   isHasToken: 0
-  isHasCrown: 0
   house: 6
   outlineMovement: {fileID: 1987349530}
   outlineHouseBorder: {fileID: 328265525}
@@ -8494,7 +8494,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fcfb726fa5713394b8603eeba3b7e77a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8560,11 +8560,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: Carhold
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 0
+  isHasCrown: 1
   isHasToken: 0
-  isHasCrown: 0
   house: 6
   outlineMovement: {fileID: 750605328}
   outlineHouseBorder: {fileID: 1298030432}
@@ -8610,7 +8610,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9372db44628ee8c4fa3e10fa943f5a42, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9387,7 +9387,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -9674,7 +9674,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -10487,7 +10487,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -10765,11 +10765,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: Sunspear Port
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 4
   outlineMovement: {fileID: 996151528}
   outlineHouseBorder: {fileID: 1232425198}
@@ -11439,11 +11439,11 @@ MonoBehaviour:
   - {fileID: 896642805}
   name: Kingswood
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
+  isHasSupply: 1
+  isHasStronghold: 0
+  isHasCastle: 0
+  isHasCrown: 1
   isHasToken: 0
-  isHasCrown: 0
   house: 5
   outlineMovement: {fileID: 129275441}
   outlineHouseBorder: {fileID: 2106390282}
@@ -11489,7 +11489,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c5747b71caa5e50499ed0e552da57977, type: 3}
-  m_Color: {r: 0.9764706, g: 1, b: 0.0627451, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12741,11 +12741,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: Kings Landing
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
+  isHasSupply: 0
+  isHasStronghold: 1
+  isHasCastle: 0
+  isHasCrown: 1
   isHasToken: 0
-  isHasCrown: 0
   house: 6
   outlineMovement: {fileID: 117624984}
   outlineHouseBorder: {fileID: 2071383714}
@@ -12791,7 +12791,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4a098ea4ba3866b4d8711398b59dfa66, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12958,7 +12958,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -13326,11 +13326,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: Futs Finger
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 1
   isHasCrown: 0
+  isHasToken: 0
   house: 6
   outlineMovement: {fileID: 1108876798}
   outlineHouseBorder: {fileID: 246890466}
@@ -13376,7 +13376,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 15dd3df9d6b93df4694448cdf271d9b5, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14856,11 +14856,11 @@ MonoBehaviour:
   - {fileID: 214361951}
   name: Dragonstone
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
+  isHasSupply: 1
+  isHasStronghold: 1
+  isHasCastle: 0
+  isHasCrown: 1
   isHasToken: 0
-  isHasCrown: 0
   house: 5
   outlineMovement: {fileID: 1223918052}
   outlineHouseBorder: {fileID: 690015901}
@@ -14906,7 +14906,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f640ec13fd7836b439672850443b95a7, type: 3}
-  m_Color: {r: 0.9764706, g: 1, b: 0.0627451, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15158,7 +15158,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -15442,11 +15442,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: Bay of Ice
   isWater: 1
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 6
   outlineMovement: {fileID: 340106303}
   outlineHouseBorder: {fileID: 1941628415}
@@ -16222,11 +16222,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: Storms End
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 1
   isHasCrown: 0
+  isHasToken: 0
   house: 6
   outlineMovement: {fileID: 2025362264}
   outlineHouseBorder: {fileID: 86733930}
@@ -16272,7 +16272,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e597e40550363ab49849547fed782f47, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -16804,11 +16804,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: West Summer Sea
   isWater: 1
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 6
   outlineMovement: {fileID: 1629731991}
   outlineHouseBorder: {fileID: 1215488781}
@@ -17840,11 +17840,11 @@ MonoBehaviour:
   - {fileID: 41266844}
   name: Winterfell
   isWater: 0
-  isSupply: 1
-  isCastle: 0
-  isStronghold: 0
+  isHasSupply: 1
+  isHasStronghold: 1
+  isHasCastle: 0
+  isHasCrown: 1
   isHasToken: 0
-  isHasCrown: 0
   house: 0
   outlineMovement: {fileID: 676131488}
   outlineHouseBorder: {fileID: 1230081256}
@@ -17890,7 +17890,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2f1060ff1a90537469531c3facbfab84, type: 3}
-  m_Color: {r: 0.003921569, g: 0.6901961, b: 1, a: 0.36078432}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -18576,11 +18576,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: The Arbor
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 0
+  isHasCrown: 1
   isHasToken: 0
-  isHasCrown: 0
   house: 6
   outlineMovement: {fileID: 1929508313}
   outlineHouseBorder: {fileID: 1154951695}
@@ -18626,7 +18626,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: bea092408fceb5043a319e04043fc977, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -19682,11 +19682,11 @@ MonoBehaviour:
   - {fileID: 1691809342}
   name: The Golden Sound
   isWater: 1
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 2
   outlineMovement: {fileID: 1359016321}
   outlineHouseBorder: {fileID: 794653477}
@@ -20545,11 +20545,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: Princes Pass
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
+  isHasSupply: 1
+  isHasStronghold: 0
+  isHasCastle: 0
+  isHasCrown: 1
   isHasToken: 0
-  isHasCrown: 0
   house: 6
   outlineMovement: {fileID: 1733961184}
   outlineHouseBorder: {fileID: 1016299345}
@@ -20595,7 +20595,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d26ef36b43970c04c814762c81298bc2, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -20816,7 +20816,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -21372,11 +21372,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: Starfall
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 1
+  isHasStronghold: 0
+  isHasCastle: 1
   isHasCrown: 0
+  isHasToken: 0
   house: 6
   outlineMovement: {fileID: 1821972984}
   outlineHouseBorder: {fileID: 67929626}
@@ -21422,7 +21422,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d2f7685094f8b504289a82de750f3a20, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -21695,11 +21695,11 @@ MonoBehaviour:
   - {fileID: 3371397878156844703}
   name: Pyke
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
+  isHasSupply: 1
+  isHasStronghold: 1
+  isHasCastle: 0
+  isHasCrown: 1
   isHasToken: 0
-  isHasCrown: 0
   house: 1
   outlineMovement: {fileID: 1444760472}
   outlineHouseBorder: {fileID: 1069387167}
@@ -21745,7 +21745,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 48a08e62b47d8ae42bfb86bd3df0a040, type: 3}
-  m_Color: {r: 0.4627451, g: 0.4627451, b: 0.4627451, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -21887,11 +21887,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: Castle Black
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 0
+  isHasCrown: 1
   isHasToken: 0
-  isHasCrown: 0
   house: 6
   outlineMovement: {fileID: 325163177}
   outlineHouseBorder: {fileID: 845196879}
@@ -22112,7 +22112,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: -1
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -22594,11 +22594,11 @@ MonoBehaviour:
   - {fileID: 5866978461376242391}
   name: The Shivering Sea
   isWater: 1
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 0
   outlineMovement: {fileID: 1109388239}
   outlineHouseBorder: {fileID: 934966518}
@@ -24681,7 +24681,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -25108,11 +25108,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: The Reach
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 1
   isHasCrown: 0
+  isHasToken: 0
   house: 6
   outlineMovement: {fileID: 1737585986}
   outlineHouseBorder: {fileID: 1358108791}
@@ -25158,7 +25158,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1578f127fa298e9428437fe2992c6295, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -25500,7 +25500,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -26199,7 +26199,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -26477,11 +26477,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: Storms End Port
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 6
   outlineMovement: {fileID: 2060293724}
   outlineHouseBorder: {fileID: 984714992}
@@ -26733,11 +26733,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: Seagard
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
+  isHasSupply: 1
+  isHasStronghold: 1
+  isHasCastle: 0
+  isHasCrown: 1
   isHasToken: 0
-  isHasCrown: 0
   house: 6
   outlineMovement: {fileID: 2075550635}
   outlineHouseBorder: {fileID: 329323794}
@@ -26783,7 +26783,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5d5da9a000b92bd4e869e8975ef0de00, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -27398,11 +27398,11 @@ MonoBehaviour:
   - {fileID: 2066030885}
   name: StoneySept
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 0
+  isHasCrown: 1
   isHasToken: 0
-  isHasCrown: 0
   house: 2
   outlineMovement: {fileID: 1295859342}
   outlineHouseBorder: {fileID: 1551530902}
@@ -27448,7 +27448,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e6a81e52b3bf97f4cbea1be8b673e6f0, type: 3}
-  m_Color: {r: 1, g: 0.20784314, b: 0, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -27540,7 +27540,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -27890,7 +27890,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -29000,11 +29000,11 @@ MonoBehaviour:
   - {fileID: 918915424}
   name: Moat Cailin
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 1
   isHasCrown: 0
+  isHasToken: 0
   house: 1
   outlineMovement: {fileID: 914771553}
   outlineHouseBorder: {fileID: 1185355005}
@@ -29050,7 +29050,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 299638c52610e1649adc8d6611aef4ae, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -29214,7 +29214,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -29962,11 +29962,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: Dragonstone Port
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 5
   outlineMovement: {fileID: 176056679}
   outlineHouseBorder: {fileID: 497500851}
@@ -30182,7 +30182,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -30467,11 +30467,11 @@ MonoBehaviour:
   - {fileID: 7801756958169763508}
   name: Ironmans Bay
   isWater: 1
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 1
   outlineMovement: {fileID: 805614248}
   outlineHouseBorder: {fileID: 1880398943}
@@ -31381,11 +31381,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: The Fingers
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 1
+  isHasStronghold: 0
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 6
   outlineMovement: {fileID: 2131149205}
   outlineHouseBorder: {fileID: 1833200353}
@@ -31431,7 +31431,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 09ed7364e09921548bfe3851ffa7a616, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -31491,7 +31491,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -32209,7 +32209,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -32492,11 +32492,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: Yronwood
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 1
   isHasCrown: 0
+  isHasToken: 0
   house: 6
   outlineMovement: {fileID: 1472574648}
   outlineHouseBorder: {fileID: 1738360871}
@@ -32542,7 +32542,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7fb9aa5f7d678524b82ef88280a09877, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -32703,7 +32703,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 1
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: -1
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -32966,7 +32966,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -33560,11 +33560,11 @@ MonoBehaviour:
   - {fileID: 33484287}
   name: Salt Shore
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 1
+  isHasStronghold: 0
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 4
   outlineMovement: {fileID: 660156123}
   outlineHouseBorder: {fileID: 1046046524}
@@ -33610,7 +33610,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c629264cd07236c40851a00a15769c1f, type: 3}
-  m_Color: {r: 1, g: 0.827451, b: 0, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -33783,7 +33783,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -34991,7 +34991,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: -1
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -35502,11 +35502,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: Three Towers
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 1
+  isHasStronghold: 0
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 6
   outlineMovement: {fileID: 161214502}
   outlineHouseBorder: {fileID: 1225170808}
@@ -35552,7 +35552,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7530dc4d03b8b754aa5bd6686519f888, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -35794,11 +35794,11 @@ MonoBehaviour:
   - {fileID: 5753985833448836873}
   name: Sea of Dorn
   isWater: 1
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 4
   outlineMovement: {fileID: 906019440}
   outlineHouseBorder: {fileID: 1543989751}
@@ -36028,7 +36028,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -36312,11 +36312,11 @@ MonoBehaviour:
   - {fileID: 374421412}
   name: Redwyne Strights
   isWater: 1
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 3
   outlineMovement: {fileID: 2110045391}
   outlineHouseBorder: {fileID: 2124700785}
@@ -36822,7 +36822,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -37657,11 +37657,11 @@ MonoBehaviour:
   - {fileID: 1614197138}
   name: Highgarden
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 1
+  isHasStronghold: 1
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 3
   outlineMovement: {fileID: 931046947}
   outlineHouseBorder: {fileID: 98974384}
@@ -37707,7 +37707,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c6b56230b8960ae42baeeabf7232c30e, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.19215687, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -38948,11 +38948,11 @@ MonoBehaviour:
   - {fileID: 1720011875}
   name: Pyke Port
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 1
   outlineMovement: {fileID: 534655655}
   outlineHouseBorder: {fileID: 1910569963}
@@ -39635,7 +39635,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -40947,11 +40947,11 @@ MonoBehaviour:
   - {fileID: 1481137802}
   name: Shipsbreaker Bay
   isWater: 1
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 5
   outlineMovement: {fileID: 1658836116}
   outlineHouseBorder: {fileID: 174559480}
@@ -41615,7 +41615,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -41890,7 +41890,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -42502,7 +42502,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -42782,11 +42782,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: Widows Watch
   isWater: 0
-  isSupply: 1
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 1
+  isHasStronghold: 0
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 6
   outlineMovement: {fileID: 1395160848}
   outlineHouseBorder: {fileID: 2029953660}
@@ -42832,7 +42832,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2b48b70edc4b45c4da4944fbfe7e44a6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -44284,7 +44284,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -44729,11 +44729,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: Crackclaw Point
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 1
   isHasCrown: 0
+  isHasToken: 0
   house: 6
   outlineMovement: {fileID: 468319904}
   outlineHouseBorder: {fileID: 1349094523}
@@ -44779,7 +44779,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e45da5a1a3f2d0a4f81c19d121649395, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -44973,11 +44973,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: The Stony Shore
   isWater: 0
-  isSupply: 1
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 1
+  isHasStronghold: 0
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 6
   outlineMovement: {fileID: 1542227896}
   outlineHouseBorder: {fileID: 1077868633}
@@ -45023,7 +45023,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e584d87ac3d745d4499d8c67fb673505, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -45482,11 +45482,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: Winterfell Port
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 0
   outlineMovement: {fileID: 277047666}
   outlineHouseBorder: {fileID: 123203076}
@@ -45762,11 +45762,11 @@ MonoBehaviour:
   - {fileID: 8324068566633305988}
   name: Lannisport
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 1
+  isHasStronghold: 1
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 2
   outlineMovement: {fileID: 1210306672}
   outlineHouseBorder: {fileID: 280975807}
@@ -45812,7 +45812,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c516d1d2d8bb7914c8b1d64be091e5ce, type: 3}
-  m_Color: {r: 1, g: 0.20784314, b: 0, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -46735,11 +46735,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: Blackwater
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 1
+  isHasStronghold: 0
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 6
   outlineMovement: {fileID: 614779735}
   outlineHouseBorder: {fileID: 1633178209}
@@ -46785,7 +46785,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2b35172b04653e54aa63d5551385ae9d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -47283,7 +47283,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -47833,7 +47833,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -48629,11 +48629,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: Blackwater Bay
   isWater: 1
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 6
   outlineMovement: {fileID: 1853540442}
   outlineHouseBorder: {fileID: 1867046532}
@@ -49458,7 +49458,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -49736,11 +49736,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: Lannisport Port
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 2
   outlineMovement: {fileID: 1695093236}
   outlineHouseBorder: {fileID: 1034039891}
@@ -50603,11 +50603,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: The Boneway
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 0
+  isHasCrown: 1
   isHasToken: 0
-  isHasCrown: 0
   house: 6
   outlineMovement: {fileID: 1475572888}
   outlineHouseBorder: {fileID: 604723417}
@@ -50653,7 +50653,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a5abce09a242b914c87b79a636bebf28, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -50826,11 +50826,11 @@ MonoBehaviour:
   - {fileID: 960552201}
   name: Sunspear
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
+  isHasSupply: 1
+  isHasStronghold: 1
+  isHasCastle: 0
+  isHasCrown: 1
   isHasToken: 0
-  isHasCrown: 0
   house: 4
   outlineMovement: {fileID: 159326842}
   outlineHouseBorder: {fileID: 1240604133}
@@ -50876,7 +50876,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2eb312bfc7d9594429c5db9cc40fcd5a, type: 3}
-  m_Color: {r: 1, g: 0.827451, b: 0, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -51036,11 +51036,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: Oldtown
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 0
+  isHasStronghold: 1
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 6
   outlineMovement: {fileID: 930932835}
   outlineHouseBorder: {fileID: 2126868641}
@@ -51086,7 +51086,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 192a86e5548462f44a526f48612dda9c, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -51242,7 +51242,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -51604,7 +51604,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -51867,7 +51867,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -52486,7 +52486,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -52802,6 +52802,58 @@ MonoBehaviour:
     - {fileID: 1568595707}
     - {fileID: 326720529}
     - {fileID: 1377227527}
+  - lands: []
+    namePlayer: 
+    house: 2
+    supply: 0
+    armyCount: 0
+    houseCard:
+    - {fileID: 1419230947}
+    - {fileID: 162812444}
+    - {fileID: 760965058}
+    - {fileID: 631916235}
+    - {fileID: 1583379408}
+    - {fileID: 488061852}
+    - {fileID: 1520061554}
+  - lands: []
+    namePlayer: 
+    house: 3
+    supply: 0
+    armyCount: 0
+    houseCard:
+    - {fileID: 463944959}
+    - {fileID: 1581282762}
+    - {fileID: 56256310}
+    - {fileID: 2032287391}
+    - {fileID: 1440876575}
+    - {fileID: 392775108}
+    - {fileID: 2128645195}
+  - lands: []
+    namePlayer: 
+    house: 4
+    supply: 0
+    armyCount: 0
+    houseCard:
+    - {fileID: 1217313919}
+    - {fileID: 1995596178}
+    - {fileID: 508201017}
+    - {fileID: 1293596327}
+    - {fileID: 1649119540}
+    - {fileID: 2021788230}
+    - {fileID: 1869061255}
+  - lands: []
+    namePlayer: 
+    house: 5
+    supply: 0
+    armyCount: 0
+    houseCard:
+    - {fileID: 1975278038}
+    - {fileID: 660274049}
+    - {fileID: 623565885}
+    - {fileID: 298916691}
+    - {fileID: 1722188372}
+    - {fileID: 1560002850}
+    - {fileID: 2123979484}
 --- !u!4 &1966897169
 Transform:
   m_ObjectHideFlags: 0
@@ -53723,11 +53775,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: The Mountains of the Moon
   isWater: 0
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 1
+  isHasStronghold: 0
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 6
   outlineMovement: {fileID: 1385759113}
   outlineHouseBorder: {fileID: 473534959}
@@ -53773,7 +53825,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6d175d6ec70b8ba43b1c6d7cdaff2fe2, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -53981,7 +54033,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -54261,11 +54313,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: Sunset Sea
   isWater: 1
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 6
   outlineMovement: {fileID: 1753105059}
   outlineHouseBorder: {fileID: 739185144}
@@ -54979,7 +55031,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -55254,11 +55306,11 @@ MonoBehaviour:
   unitsOnLand: []
   name: The Narrow Sea
   isWater: 1
-  isSupply: 0
-  isCastle: 0
-  isStronghold: 0
-  isHasToken: 0
+  isHasSupply: 0
+  isHasStronghold: 0
+  isHasCastle: 0
   isHasCrown: 0
+  isHasToken: 0
   house: 6
   outlineMovement: {fileID: 336394082}
   outlineHouseBorder: {fileID: 354665425}
@@ -56022,7 +56074,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -56645,7 +56697,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -56920,7 +56972,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -57470,7 +57522,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -58496,7 +58548,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -59046,7 +59098,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
