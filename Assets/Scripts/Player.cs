@@ -12,6 +12,7 @@ public class Player
     public int supply;
     public int armyCount;
     public List<HouseCard> houseCard;
+    public GameTimeline timeline;
 
     public void Setup()
     {
@@ -33,5 +34,6 @@ public class Player
             armyCount = GameRules.ChangeArmyCount(supply);
         }
         lands.Add(land);
+        land.Player = this;
     }
 }

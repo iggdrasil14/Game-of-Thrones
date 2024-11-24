@@ -21,6 +21,7 @@ public class Land : MonoBehaviour
     public bool isHasCrown;                                     // Наличие символа власти.
     public bool isHasToken;
     public House house;
+    public Player Player {  get; set; }
 
     // Подсветка земли
     [Space(25)]
@@ -125,6 +126,7 @@ public class Land : MonoBehaviour
         var token = Instantiate(PlayerInput.Instance.tokenPrefab, tokenPosition, Quaternion.identity);
         token.land = this;
         isHasToken = true;
+
     }
 
     public void OnMouseEnter()
